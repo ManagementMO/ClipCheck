@@ -148,7 +148,16 @@ Since Xcode only runs on macOS, Windows users need to run macOS in a virtual mac
 
 ### Step 2 — Obtain a macOS ISO
 
-You need a macOS installer ISO image (macOS Sequoia or later recommended). If you have access to a Mac, you can create one:
+You need a macOS installer ISO image (macOS Tahoe 26 or later recommended).
+
+**Download a pre-built ISO:**
+
+- [GEEKrar — macOS Tahoe ISO](https://www.geekrar.com/download-macos-tahoe-iso-virtualbox-vmware/)
+- [TechRechard — macOS Tahoe ISO](https://techrechard.com/download-macos-tahoe-iso-vmware-virtualbox/)
+- [iBoysoft — macOS Tahoe ISO](https://iboysoft.com/howto/macos-tahoe-iso.html)
+- [Olarila — macOS Tahoe ISO for VMs](https://olarila.com/topic/43454-macos-tahoe-iso-for-virtual-machine/)
+
+**Or create your own from a Mac:**
 
 1. Download macOS from the App Store (do not install it)
 2. Open Terminal and create a blank DMG:
@@ -161,7 +170,7 @@ You need a macOS installer ISO image (macOS Sequoia or later recommended). If yo
    mv ~/Desktop/macOS.cdr ~/Desktop/macOS.iso
    ```
 
-If you do not have access to a Mac, search for trusted macOS ISO sources online.
+See [macpaw.com](https://macpaw.com/how-to/create-macos-tahoe-iso) for a detailed walkthrough.
 
 ### Step 3 — Create the Virtual Machine
 
