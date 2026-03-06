@@ -142,7 +142,7 @@ Use this repo to focus on product decisions, flow quality, and 30-second UX — 
 ## Zero-to-PR Quickstart
 
 Quick Start Video:
-- https://github.com/user-attachments/assets/ad462d99-91d6-4218-a88a-9808c34f8ddd
+- [assets/quick-start.mov](assets/quick-start.mov)
 
 ### 0) Set the goal
 
