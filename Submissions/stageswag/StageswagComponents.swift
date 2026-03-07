@@ -259,23 +259,27 @@ struct StageswagMerchCard: View {
             if item.isApparel {
                 HStack(spacing: 6) {
                     ForEach(sizes, id: \.self) { size in
-                        Text(size)
-                            .font(.system(size: 11, weight: .semibold))
-                            .foregroundStyle(selectedSize == size ? .white : .secondary)
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 4)
-                            .background {
-                                if selectedSize == size {
-                                    Capsule().fill(item.accentColor)
-                                } else {
-                                    Capsule().fill(Color(.tertiarySystemFill))
-                                }
+                        Button {
+                            withAnimation(.spring(duration: 0.2)) {
+                                selectedSize = size
                             }
-                            .onTapGesture {
-                                withAnimation(.spring(duration: 0.2)) {
-                                    selectedSize = size
+                        } label: {
+                            Text(size)
+                                .font(.system(size: 11, weight: .semibold))
+                                .foregroundStyle(selectedSize == size ? .white : .secondary)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .background {
+                                    if selectedSize == size {
+                                        Capsule().fill(item.accentColor)
+                                    } else {
+                                        Capsule().fill(Color(.tertiarySystemFill))
+                                    }
                                 }
-                            }
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel(size)
+                        .accessibilityAddTraits(selectedSize == size ? .isSelected : [])
                     }
                 }
             }
