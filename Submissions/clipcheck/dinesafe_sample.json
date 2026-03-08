@@ -1,0 +1,5870 @@
+[
+  {
+    "id": "10197785",
+    "name": "7-ELEVEN",
+    "address": "372 BAY ST",
+    "type": "Food Store (Convenience/Variety)",
+    "latitude": 43.65094,
+    "longitude": -79.38149,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Refrigerate potentially hazardous foods at internal temperature above 4 C - Sec. 30(a)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-05",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-10-30",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10664624",
+    "name": "AFRICAN CHOP BAR",
+    "address": "2503 FINCH AVE W, Bldg-0",
+    "type": "Restaurant",
+    "latitude": 43.74954,
+    "longitude": -79.55324,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Food premise not maintained with walls in good repair in food-handling room - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-13",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-09-04",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10661517",
+    "name": "ALBION HILLS FARM (RAWF 2024) HALL A",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "USE EQUIPMENT NOT SUITABLE FOR INTENDED PURPOSE - SEC. 8(1)(D)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "USE MULTI-SERVICE ARTICLES NOT SUITABLE FOR INTENDED PURPOSE - SEC. 8(1)(D)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10778236",
+    "name": "ALPHA'S SHAWARMA",
+    "address": "598 QUEEN ST W",
+    "type": "Restaurant",
+    "latitude": 43.64719,
+    "longitude": -79.40449,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-10-01",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM MATERIALS NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-07-14",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10775632",
+    "name": "ANNEX ESPRESSO BAR",
+    "address": "718 BATHURST ST",
+    "type": "Restaurant",
+    "latitude": 43.66309,
+    "longitude": -79.41065,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-13",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695241",
+    "name": "Algoma Highlands Wild Blueberry Farm and Winery (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-11-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10772247",
+    "name": "BAKERY POMPETTE",
+    "address": "655 COLLEGE ST",
+    "type": "Bakery",
+    "latitude": 43.65493,
+    "longitude": -79.41618,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-02-18",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-09-06",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10808590",
+    "name": "BENTO SUSHI",
+    "address": "825 DON MILLS RD",
+    "type": "Food Take Out",
+    "latitude": 43.72202,
+    "longitude": -79.33897,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-05",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-09-16",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "THERMOMETER IN REFRIGERATION EQUIPMENT NOT EASILY READABLE - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10773911",
+    "name": "BREADHEAD COMMISSARY",
+    "address": "346 WESTMORELAND AVE N, Unit-105C",
+    "type": "Commissary",
+    "latitude": 43.67074,
+    "longitude": -79.43466,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-27",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-10-30",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695217",
+    "name": "BRITISH BAKED GOODS",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-08-16",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797533",
+    "name": "The Side Launch Bull Pen Saloon/Yellowstone Dutton Ranch- RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FAIL TO ENSURE FOOD HANDLER IN FOOD PREMISE PROTECTS AGAINST CONTAMINATION BY HAIR - SEC.  33(1)(D)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661001",
+    "name": "Bouchards Poutinery (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10261684",
+    "name": "CACTUS",
+    "address": "1911 FINCH AVE W, Unit-4",
+    "type": "Supermarket",
+    "latitude": 43.75685,
+    "longitude": -79.51714,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-09",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-07-05",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9021768",
+    "name": "CARLETON VILLAGE EARLY LEARNING CENTRE",
+    "address": "315 OSLER ST, Rm-106-107-107A",
+    "type": "Child Care - Catered",
+    "latitude": 43.67236,
+    "longitude": -79.46003,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-01-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10769241",
+    "name": "CARLETON VILLAGE JR & SR P.S. - CAFETERIA",
+    "address": "315 OSLER ST",
+    "type": "Secondary School Food Services",
+    "latitude": 43.67236,
+    "longitude": -79.46003,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-05-31",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9002483",
+    "name": "CARLTON VILLAGE PUBLIC SCHOOL - SNP",
+    "address": "315 OSLER ST, Unit-2",
+    "type": "Student Nutrition Site",
+    "latitude": 43.67236,
+    "longitude": -79.46003,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-05-31",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9002653",
+    "name": "CENTRAL MONTESSORI SCHOOLS",
+    "address": "157 WILLOWDALE AVE",
+    "type": "Child Care - Catered",
+    "latitude": 43.76666,
+    "longitude": -79.40042,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-02-28",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-18",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10767549",
+    "name": "CHEESECAKE BY HEIRLOOM 1228 (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9002857",
+    "name": "CHILDREN'S CIRCLE OF ST. BARNABAS",
+    "address": "175 HAMPTON AVE",
+    "type": "Child Care - Food Preparation",
+    "latitude": 43.67708,
+    "longitude": -79.35219,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-09-24",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN WALLS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-09",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Use shelves not of readily cleanable design - Sec. 31",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10660996",
+    "name": "COFFEE EXPRESS (RAWF 2024).",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9003536",
+    "name": "COPERNICUS LODGE",
+    "address": "66 RONCESVALLES AVE, Unit-1",
+    "type": "Nursing Home / Home for the Aged",
+    "latitude": 43.6402,
+    "longitude": -79.44731,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-23",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-01-21",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797727",
+    "name": "CORNUCOPIA GOURMET POPCORN CO. (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797505",
+    "name": "COUNTRY BOYS LAMB (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10792788",
+    "name": "CUCKOO CAKERY",
+    "address": "49 MERCHANTS WHARF",
+    "type": "Food Take Out",
+    "latitude": 43.64447,
+    "longitude": -79.36386,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-23",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-04-19",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10660968",
+    "name": "Country Boys (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10767954",
+    "name": "DISTILLERIE RHEAULT - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10333957",
+    "name": "DOMINO'S PIZZA",
+    "address": "784 EGLINTON AVE E",
+    "type": "Food Take Out",
+    "latitude": 43.71333,
+    "longitude": -79.3671,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "OPERATE FOOD PREMISE - FAIL TO EQUIP SANITARY FACILITY WITH SOAP OR DETERGENT - SEC. 24(3)(D)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FAIL TO ENSURE FACILITY SURFACE CLEANED AS NECESSARY - SEC. 22",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-13",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-01-02",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10353350",
+    "name": "DREWRY CAFE",
+    "address": "70 DREWRY AVE, Unit-612",
+    "type": "Cafeteria - Private Access",
+    "latitude": 43.78699,
+    "longitude": -79.42122,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-04-22",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10809609",
+    "name": "DREWRY SECONDARY SCHOOL-SNP",
+    "address": "70 DREWRY AVE",
+    "type": "Student Nutrition Site",
+    "latitude": 43.78699,
+    "longitude": -79.42122,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-04-22",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10388660",
+    "name": "E.L. RUDDY CO. CAFE",
+    "address": "1371 DUNDAS ST W",
+    "type": "Restaurant",
+    "latitude": 43.64939,
+    "longitude": -79.4278,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-08-26",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN CEILING IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2023-12-12",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9004970",
+    "name": "ELKHORN JUNIOR YMCA CHILD CARE",
+    "address": "10 ELKHORN DR",
+    "type": "Child Care - Catered",
+    "latitude": 43.77122,
+    "longitude": -79.38007,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-01-21",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-02-28",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10222208",
+    "name": "ENCORE FOOD WITH ELEGANCE",
+    "address": "5000 DUFFERIN ST, Unit-P",
+    "type": "Food Caterer",
+    "latitude": 43.78202,
+    "longitude": -79.47117,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-09",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-11",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Operate food premise - equipment not arranged to permit maintenance in sanitary condition - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10797728",
+    "name": "FOR THE BEES FARM (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797522",
+    "name": "FORAGED NORTH - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10578162",
+    "name": "FUKUI SUSHI",
+    "address": "1612 BAYVIEW AVE",
+    "type": "Restaurant",
+    "latitude": 43.70628,
+    "longitude": -79.37564,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-08-26",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-23",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10660905",
+    "name": "GAY-LEA  (RAWF 2018) BOOTH 2727",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10285778",
+    "name": "GHAZALE",
+    "address": "661 COLLEGE ST",
+    "type": "Restaurant",
+    "latitude": 43.65495,
+    "longitude": -79.41634,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-03-13",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-09-06",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10225856",
+    "name": "GLADSTONE HOUSE",
+    "address": "1214 QUEEN ST W",
+    "type": "Restaurant",
+    "latitude": 43.64257,
+    "longitude": -79.42686,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-11-04",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - MECHANICAL EQUIPMENT NOT MAINTAINED TO PROVIDE SUFFICIENT CHEMICAL SOLUTION RINSE - SEC. 20(1)(A)(II)(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-06",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10767533",
+    "name": "GOLDEN TREASURE (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10790338",
+    "name": "GREENWOOD MARKET",
+    "address": "1258 DANFORTH AVE",
+    "type": "Supermarket",
+    "latitude": 43.68201,
+    "longitude": -79.33092,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-01-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2023-08-15",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661332",
+    "name": "Grandpa Kens Back Bacon and Burgers (RAWF 2024) FC",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10724072",
+    "name": "HAKKA KHAZANA",
+    "address": "2167 VICTORIA PARK AVE",
+    "type": "Restaurant",
+    "latitude": 43.75893,
+    "longitude": -79.31533,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-17",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "USE UTENSILS NOT IN GOOD REPAIR - SEC. 8(1)(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-12",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10660909",
+    "name": "HARRISON'S ICE CREAM  (RAWF 2024)BOOTH3123 -HALL A",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661501",
+    "name": "HARRISON'S ICE CREAM (RAWF 2024) - HALL C",
+    "address": "100 PRINCES BLVD, Unit-RAWF 2022",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797729",
+    "name": "HEARTWOOD MUSHROOMS (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-06",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10659457",
+    "name": "HER CHEF",
+    "address": "599 BLOOR ST W",
+    "type": "Restaurant",
+    "latitude": 43.66474,
+    "longitude": -79.413,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN WALLS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-23",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-14",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10767598",
+    "name": "HOGAN'S HOMESTEAD (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661230",
+    "name": "Harrisons Ice Cream (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-11-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10515614",
+    "name": "Indian Roti House",
+    "address": "471 CHURCH ST",
+    "type": "Food Take Out",
+    "latitude": 43.66448,
+    "longitude": -79.38008,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-06-20",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-06-19",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against harbouring of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect food from contamination or adulteration - Sec. 26(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10386835",
+    "name": "JAMES S. BELL KINDER - Student Nutrition Program",
+    "address": "90 THIRTY FIRST ST",
+    "type": "Student Nutrition Site",
+    "latitude": 43.59436,
+    "longitude": -79.53019,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-04-17",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-12-20",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10773642",
+    "name": "JAVA JOE'S",
+    "address": "405 THE WEST MALL",
+    "type": "Restaurant",
+    "latitude": 43.64517,
+    "longitude": -79.56728,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Use food equipment not in good repair - Sec.  8(1)(b)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Display potentially hazardous foods at internal temperature between 4 C and 60 C - Sec. 27(1)",
+            "severity": "C - Crucial",
+            "action": "Ticket"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-07-18",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-04",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10304285",
+    "name": "JOHN ENGLISH SCHOOL STUDENT NUTRITION SITE",
+    "address": "95 MIMICO AVE",
+    "type": "Student Nutrition Site",
+    "latitude": 43.61186,
+    "longitude": -79.49442,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-29",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-03-28",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10587818",
+    "name": "JOHN ENGLISH YMCA",
+    "address": "95 MIMICO AVE",
+    "type": "Child Care - Food Preparation",
+    "latitude": 43.61186,
+    "longitude": -79.49442,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-03-28",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-10-19",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10546766",
+    "name": "KAWA SUSHI",
+    "address": "451 CHURCH ST",
+    "type": "Restaurant",
+    "latitude": 43.66398,
+    "longitude": -79.37996,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-08-22",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-29",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10209424",
+    "name": "KENPIK BULK FOOD",
+    "address": "151 MANOR RD E",
+    "type": "Food Store (Convenience/Variety)",
+    "latitude": 43.70412,
+    "longitude": -79.389,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-30",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-08-31",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797564",
+    "name": "KINGHAVEN FARMS - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10797580",
+    "name": "KOREAN FRIED CHICKEN (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10735107",
+    "name": "KOUROSH SUPERMARKET",
+    "address": "740 SHEPPARD AVE E, Unit-2",
+    "type": "Food Take Out",
+    "latitude": 43.76943,
+    "longitude": -79.37558,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against harbouring of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to maintain records of pest control measures taken - Sec. 13(2)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-26",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "THERMOMETER IN REFRIGERATION EQUIPMENT NOT EASILY READABLE - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-01-21",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10723768",
+    "name": "Kababia",
+    "address": "1202 DANFORTH AVE",
+    "type": "Restaurant",
+    "latitude": 43.68179,
+    "longitude": -79.33203,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-07-24",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-03-06",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10694311",
+    "name": "Kalamata Ltd (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10525655",
+    "name": "LA CARNITA",
+    "address": "780 QUEEN ST E",
+    "type": "Restaurant",
+    "latitude": 43.65968,
+    "longitude": -79.34743,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN WALLS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - MECHANICAL EQUIPMENT NOT MAINTAINED TO PROVIDE SUFFICIENT CHEMICAL SOLUTION RINSE - SEC. 20(1)(A)(II)(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-05",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-02",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure equipment surface cleaned as necessary - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - FAIL TO EQUIP SANITARY FACILITY WITH SINGLE SERVICE TOWELS OR DRYER - SEC. 25(3)(E)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - MECHANICAL EQUIPMENT NOT MAINTAINED TO PROVIDE SUFFICIENT CHEMICAL SOLUTION RINSE - SEC. 20(1)(A)(II)(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Use food equipment not in good repair - Sec.  8(1)(b)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9403423",
+    "name": "LAKESIDE LONG TERM CARE CENTRE",
+    "address": "150 DUNN AVE",
+    "type": "Institutional Food Services",
+    "latitude": 43.63582,
+    "longitude": -79.43298,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-10-24",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against breeding of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-03",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10578384",
+    "name": "LITTLE ANGELS CHILDCARE LEARNING CENTRE",
+    "address": "1695 DUFFERIN ST",
+    "type": "Child Care - Catered",
+    "latitude": 43.67867,
+    "longitude": -79.44296,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-02-05",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-07-11",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10789782",
+    "name": "LOS TRES PANADEROS",
+    "address": "1860 EGLINTON AVE W",
+    "type": "Food Take Out",
+    "latitude": 43.69566,
+    "longitude": -79.45147,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-11-06",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Distribute potentially hazardous foods at internal temperature between 4 C and 60 C - Sec. 27(1)",
+            "severity": "C - Crucial",
+            "action": "Ticket"
+          }
+        ]
+      },
+      {
+        "date": "2025-11-04",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Maintain potentially hazardous foods at internal temperature between 4 C and 60 C -  Sec. 27(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect food from contamination or adulteration - Sec. 26(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Operate food premise - fail to provide equipment for cleaning and sanitizing utensils as required - Sec. 18",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10661493",
+    "name": "Lemon Heaven booth 6927 - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10694269",
+    "name": "Lulu's Dairy Free Ice Cream (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Ice Cream / Yogurt Vendors",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10660999",
+    "name": "MAC & CHEESERY  (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10799914",
+    "name": "MACAULAY - ST. PAUL VI CHILD CARE CENTRE",
+    "address": "270 LAUGHTON AVE",
+    "type": "Child Care - Catered",
+    "latitude": 43.67402,
+    "longitude": -79.4578,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-01-17",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-07-30",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10564190",
+    "name": "MADONNA SEPARATE SCHOOL",
+    "address": "20 DUBRAY AVE",
+    "type": "Student Nutrition Site",
+    "latitude": 43.72952,
+    "longitude": -79.47748,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-10-16",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2023-04-28",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10529896",
+    "name": "MADONNA SEPARATE SCHOOL CAFETERIA",
+    "address": "20 DUBRAY AVE",
+    "type": "Cafeteria - Private Access",
+    "latitude": 43.72952,
+    "longitude": -79.47748,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-10-16",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-04-28",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Use shelves not of readily cleanable design - Sec. 31",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9022235",
+    "name": "MALVERN EARLY LEARNING & CHILD CARE CENTRE",
+    "address": "1321 NEILSON RD",
+    "type": "Child Care - Food Preparation",
+    "latitude": 43.80796,
+    "longitude": -79.2194,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-07-22",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-03-24",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661572",
+    "name": "MAPLE LEAF FUDGE (RAWF 2024) HALL A",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661222",
+    "name": "MAPLE LODGE (RAWF 2018) - HALL B",
+    "address": "100 PRINCES BLVD, Unit-RAWF 2022",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-11-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10754189",
+    "name": "MGR DE CHARBONNEL CAFETERIA",
+    "address": "110 DREWRY AVE",
+    "type": "Cafeteria - Private Access",
+    "latitude": 43.78663,
+    "longitude": -79.42361,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-22",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-02-14",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10776851",
+    "name": "MGR DE CHARBONNEL CAFETERIA",
+    "address": "110 DREWRY AVE",
+    "type": "Student Nutrition Site",
+    "latitude": 43.78663,
+    "longitude": -79.42361,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-02-14",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-03-24",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10760952",
+    "name": "MILOU",
+    "address": "1375 DUNDAS ST W",
+    "type": "Restaurant",
+    "latitude": 43.64939,
+    "longitude": -79.42791,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-03",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN CEILING IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-08-06",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN CEILING IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10695243",
+    "name": "Muskoka Morning (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9011057",
+    "name": "NORTH POLE BAKERY",
+    "address": "1210 DANFORTH AVE, Unit-1",
+    "type": "Food Take Out",
+    "latitude": 43.68181,
+    "longitude": -79.3319,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-08-29",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9023442",
+    "name": "OAKWOOD MANOR",
+    "address": "160 OAKWOOD AVE",
+    "type": "Boarding / Lodging Home - Kitchen",
+    "latitude": 43.68004,
+    "longitude": -79.43614,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-09-30",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to provide handwashing stations with adequate supplies (hot and cold water) - Sec. 7(3)(c)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Operate food premise - equipment not constructed to permit maintenance in sanitary condition - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against harbouring of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-20",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695240",
+    "name": "OLD MILL MAPLEWORKS -RAWF2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-11-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10660960",
+    "name": "ORIGINAL ROSTI POTATOES (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10694284",
+    "name": "Organic Chef Foods (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10348035",
+    "name": "PANCHVATI SUPERMARKETS",
+    "address": "45 WOODBINE DOWNS BLVD",
+    "type": "Food Store (Convenience/Variety)",
+    "latitude": 43.73703,
+    "longitude": -79.6059,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to maintain ventilation system to ensure elimination of smoke - Sec. 11",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-11-06",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to maintain frozen food in frozen state until sold - Sec. 28",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to provide handwashing stations with adequate supplies (hot and cold water) - Sec. 7(3)(c)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Use food equipment not in good repair - Sec.  8(1)(b)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-07-22",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10198116",
+    "name": "PARKDALE EARLY LEARNING CENTRE",
+    "address": "119 CLOSE AVE",
+    "type": "Child Care - Catered",
+    "latitude": 43.63711,
+    "longitude": -79.43431,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-02-05",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-05",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10694345",
+    "name": "PITA DISTRICT - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10536790",
+    "name": "PIZZA HUT",
+    "address": "77 LOWER JARVIS ST",
+    "type": "Restaurant",
+    "latitude": 43.64765,
+    "longitude": -79.37039,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-06-23",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-30",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "OPERATE FOOD PREMISE - FAIL TO EQUIP SANITARY FACILITY WITH SINGLE SERVICE TOWELS OR DRYER - SEC. 25(3)(E)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10482592",
+    "name": "PIZZA PIZZA",
+    "address": "1393 LAWRENCE AVE W",
+    "type": "Restaurant",
+    "latitude": 43.70887,
+    "longitude": -79.47706,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-01-30",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-27",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10564599",
+    "name": "PLASP-BEFORE & AFTER JAMES S. BELL P.S.",
+    "address": "90 THIRTY FIRST ST",
+    "type": "Child Care - Catered",
+    "latitude": 43.59436,
+    "longitude": -79.53019,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-31",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-10-26",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10767659",
+    "name": "POMME FRITES AND HOTDOGS (FURIOUS FRANKS,RAWR 2024)",
+    "address": "100 PRINCES BLVD, Bldg-1",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-11-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695244",
+    "name": "PURVIS (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10660993",
+    "name": "Philthy Philly's (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9385393",
+    "name": "REAL CANADIAN SUPERSTORE",
+    "address": "825 DON MILLS RD",
+    "type": "Supermarket",
+    "latitude": 43.72202,
+    "longitude": -79.33897,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - FAIL TO KEEP SANITARY FACILITY SANITARY - SEC. 25(2)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-01-23",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-30",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10652234",
+    "name": "REAL FRUIT BUBBLE TEA",
+    "address": "6464 YONGE ST, Bldg-190A",
+    "type": "Food Take Out",
+    "latitude": 43.79555,
+    "longitude": -79.42008,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-04-10",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10652488",
+    "name": "REAL FRUIT BUBBLE TEA",
+    "address": "1090 DON MILLS RD, Unit-G009",
+    "type": "Restaurant",
+    "latitude": 43.73644,
+    "longitude": -79.34423,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-11-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure equipment surface cleaned as necessary - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-08-08",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10814736",
+    "name": "RIVERCREST JUNIOR SCHOOL STUDENT NUTRITION",
+    "address": "30 HAREFIELD DR",
+    "type": "Student Nutrition Site",
+    "latitude": 43.72972,
+    "longitude": -79.56952,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-06-12",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10374385",
+    "name": "ROTI CUISINE OF INDIA",
+    "address": "308 DUPONT ST",
+    "type": "Restaurant",
+    "latitude": 43.67471,
+    "longitude": -79.40844,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-08-18",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-11-26",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10496230",
+    "name": "SAVOURY GROUNDS COFFEE CO.",
+    "address": "283 SCARBOROUGH RD",
+    "type": "Restaurant",
+    "latitude": 43.68083,
+    "longitude": -79.28706,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO REMOVE GARBAGE WHEN NECESSARY TO MAINTAIN SANITARY CONDITION - SEC. 12",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure equipment surface cleaned as necessary - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Store ice in unsanitary manner - Sec.  26(5)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-03-19",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2023-07-13",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10791791",
+    "name": "SECOND CUP",
+    "address": "55 ST GEORGE ST",
+    "type": "Food Take Out",
+    "latitude": 43.66088,
+    "longitude": -79.39682,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to sanitize utensils as often as necessary - Sec. 21(2)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-13",
+        "status": "Conditional Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-08-07",
+        "status": "Conditional Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10761843",
+    "name": "SLUSHY BEAR - PRINCES SOUTH - CNE 2022",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-08-19",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "9013210",
+    "name": "SORN THAI RESTAURANT",
+    "address": "2550 YONGE ST",
+    "type": "Restaurant",
+    "latitude": 43.71334,
+    "longitude": -79.40004,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-02-01",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN CEILING IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2023-10-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10814322",
+    "name": "ST. PAUL VI CATHOLIC SCHOOL - SNP",
+    "address": "270 LAUGHTON AVE",
+    "type": "Student Nutrition Site",
+    "latitude": 43.67402,
+    "longitude": -79.4578,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-06-12",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-06-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10796867",
+    "name": "STACKED PANCAKE AND BREAKFAST HOUSE",
+    "address": "394 QUEEN ST W, Unit-394",
+    "type": "Restaurant",
+    "latitude": 43.6488,
+    "longitude": -79.39707,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-09",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-20",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10736695",
+    "name": "STOCK BAR",
+    "address": "2388 YONGE ST, Flr-2",
+    "type": "Restaurant",
+    "latitude": 43.70926,
+    "longitude": -79.39941,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10769605",
+    "name": "SUBWAY",
+    "address": "1385 LAWRENCE AVE W",
+    "type": "Restaurant",
+    "latitude": 43.7091,
+    "longitude": -79.47642,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-08-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Food premise not maintained with walls in good repair in food-handling room - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-01-30",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10691567",
+    "name": "SUSHI BY K",
+    "address": "874 EGLINTON AVE E",
+    "type": "Restaurant",
+    "latitude": 43.71374,
+    "longitude": -79.36512,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against harbouring of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "USE UTENSILS NOT FREE FROM OPEN SEAMS IN CONTACT WITH FOOD - SEC. 8(2)(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "Fail to protect food from contamination or adulteration - Sec. 26(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-13",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "SANITIZE UTENSILS IN CHLORINE SOLUTION OF LESS THAN 100 P.P.M. OF AVAILABLE CHLORINE - SEC. 19(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "Operate food premise - appliances not constructed to permit maintenance in sanitary condition - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "USE EQUIPMENT NOT FREE FROM CRACKS IN CONTACT WITH FOOD - SEC.  8(2)(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2024-02-21",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Operate food premise - equipment not constructed to permit maintenance in sanitary condition - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10648286",
+    "name": "SWING GOLF LOUNGE",
+    "address": "1 WESTSIDE DR, Unit-2",
+    "type": "Restaurant",
+    "latitude": 43.61847,
+    "longitude": -79.56284,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-23",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-03-27",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695213",
+    "name": "Speziale Fine Foods (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695210",
+    "name": "TARTISTRY -RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10231630",
+    "name": "THAI ISLAND",
+    "address": "100 WELLINGTON ST W",
+    "type": "Food Court Vendor",
+    "latitude": 43.64676,
+    "longitude": -79.38248,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM MATERIALS NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-09-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-13",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10767504",
+    "name": "THE CHEESE FACTORY (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10215785",
+    "name": "THE FISH AND SANDWICH",
+    "address": "657 COLLEGE ST",
+    "type": "Food Take Out",
+    "latitude": 43.65503,
+    "longitude": -79.4162,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-03-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-09-06",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10718246",
+    "name": "THE ISLAND CARIBBEAN COOKSHOP",
+    "address": "4841 YONGE ST, Unit-205",
+    "type": "Food Take Out",
+    "latitude": 43.76226,
+    "longitude": -79.41083,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-08-11",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-03-06",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10660902",
+    "name": "THE WANDERING BEAN  (RAWF 2024) BOOTH 2708-HALL A",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10503731",
+    "name": "TIM HORTONS",
+    "address": "77 KING ST W",
+    "type": "Restaurant",
+    "latitude": 43.64804,
+    "longitude": -79.3822,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-06-19",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-29",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10743379",
+    "name": "TIM HORTONS",
+    "address": "17 LOWER JARVIS ST",
+    "type": "Restaurant",
+    "latitude": 43.64537,
+    "longitude": -79.36948,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-06-02",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-18",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10809497",
+    "name": "TOP CHEF JA CUISINE",
+    "address": "1367 WILSON AVE, Unit-B",
+    "type": "Restaurant",
+    "latitude": 43.72286,
+    "longitude": -79.49808,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Food premise not maintained with ceilings in good repair in food-handling room - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-07-24",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM MATERIALS NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-19",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10554960",
+    "name": "Tim Hortons",
+    "address": "455 SPADINA AVE",
+    "type": "Restaurant",
+    "latitude": 43.65829,
+    "longitude": -79.3999,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-23",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-07-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10661341",
+    "name": "Tiny Tom Donuts (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661345",
+    "name": "Uncle Bob's (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10411697",
+    "name": "VEDA HEALTHY INDIAN TAKE OUT",
+    "address": "10 KINGS COLLEGE RD",
+    "type": "Food Take Out",
+    "latitude": 43.66089,
+    "longitude": -79.39483,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-04",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-01-24",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "USE FOOD EQUIPMENT NOT OF READILY CLEANABLE FORM - SEC.  8(1)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - MECHANICAL EQUIPMENT NOT MAINTAINED TO MAINTAIN RINSE WATER AT 82 C - SEC. 20(1)(A)(II)(A)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10767957",
+    "name": "VODKOW (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2022-11-08",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10767526",
+    "name": "WALKABOUT FARM - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10555986",
+    "name": "WARRAICH MEATS",
+    "address": "6640 FINCH AVE W, Unit-5",
+    "type": "Butcher Shop",
+    "latitude": 43.73413,
+    "longitude": -79.60589,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Use food equipment not in good repair - Sec.  8(1)(b)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "SANITIZE UTENSILS IN CHLORINE SOLUTION OF LESS THAN 100 P.P.M. OF AVAILABLE CHLORINE - SEC. 19(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Maintain potentially hazardous foods at internal temperature between 4 C and 60 C -  Sec. 27(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "OPERATE FOOD PREMISE - FAIL TO EQUIP SANITARY FACILITY WITH TOILET PAPER - SEC. 25(3)(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Operate food premise - fail to keep sanitary facility in good repair - Sec. 25(2)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "USE UTENSILS NOT OF READILY CLEANABLE FORM - SEC.  8(1)(C)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN HOT-HOLDING EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "THERMOMETER IN REFRIGERATION EQUIPMENT NOT EASILY READABLE - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to collect waste when necessary to maintain sanitary condition - Sec. 12",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect food from contamination or adulteration - Sec. 26(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-07-22",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "SANITIZE UTENSILS IN CHLORINE SOLUTION OF LESS THAN 100 P.P.M. OF AVAILABLE CHLORINE - SEC. 19(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-01-06",
+        "status": "Conditional Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10800357",
+    "name": "WESTWOOD MIDDLE SCHOOL",
+    "address": "994 CARLAW AVE",
+    "type": "Student Nutrition Site",
+    "latitude": 43.6867,
+    "longitude": -79.3507,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2023-12-14",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661218",
+    "name": "Fried Chicken/Bar/Tacos RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10660952",
+    "name": "Ye Olde Fudge Pot 3028 (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10817593",
+    "name": "SHAMBHU'S COFFEE BAR",
+    "address": "1530 ALBION RD, Unit-97",
+    "type": "Restaurant",
+    "latitude": 43.74177,
+    "longitude": -79.58461,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-01-10",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-11",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH CLEAN FLOORS IN FOOD-HANDLING ROOM - SEC. 7(1)(G)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Food premise not maintained with walls in good repair in food-handling room - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10820251",
+    "name": "THE LAIR TORONTO",
+    "address": "242 PARLIAMENT ST",
+    "type": "Cocktail Bar / Beverage Room",
+    "latitude": 43.65743,
+    "longitude": -79.36518,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-09",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "USE EQUIPMENT NOT SUITABLE FOR INTENDED PURPOSE - SEC. 8(1)(D)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2024-08-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10820318",
+    "name": "AMELIAS MARKET",
+    "address": "340 WESTMORELAND AVE N, Unit-102",
+    "type": "Food Take Out",
+    "latitude": 43.67055,
+    "longitude": -79.43491,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-03",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-08-08",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10826204",
+    "name": "BOOSTER JUICE",
+    "address": "200 BAY ST, Unit-134",
+    "type": "Food Court Vendor",
+    "latitude": 43.64709,
+    "longitude": -79.38032,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-23",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10827777",
+    "name": "XINLONG FOOD",
+    "address": "15 NORTHTOWN WAY, Unit-30",
+    "type": "Food Take Out",
+    "latitude": 43.77522,
+    "longitude": -79.41335,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-22",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-10-30",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828751",
+    "name": "FUNKY FUNGHI (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695236",
+    "name": "Finnia Chocolate & Cacao Booth 3415 (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828685",
+    "name": "GREEK GOAT - RAWR 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828689",
+    "name": "HAGENS DRESSING- RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10661488",
+    "name": "How\u00e2\u0080\u0099s Apple Dumplings #720 (RAWF 2024)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828722",
+    "name": "JC'S HOT - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828684",
+    "name": "KOVACIC TRUFFLES - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Court Vendor",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828710",
+    "name": "MUSKOKA BRAND GOURMET FOODS RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10695233",
+    "name": "NICKEL CITY CHEESE RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828701",
+    "name": "NORTHERN FIELDS (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828681",
+    "name": "OLIVEIRA'S BAKERY - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Court Vendor",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828720",
+    "name": "PANELA BAKING FACTORY/Koloochi - RAWF 2025",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828768",
+    "name": "ROYAL CAFE - RAWF 2024",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE FOOD HANDLER IN FOOD PREMISE PROTECTS AGAINST CONTAMINATION BY HAIR - SEC.  33(1)(D)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10695258",
+    "name": "THE QUEENS TARTS",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10828756",
+    "name": "THE WANDERING BEAN (RAWF 2024) BOOTH 4201",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10829097",
+    "name": "RUNNYMEDE UNITED CHURCH",
+    "address": "432 RUNNYMEDE RD",
+    "type": "Serving Kitchen",
+    "latitude": 43.65681,
+    "longitude": -79.47921,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-03-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-05",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10251729",
+    "name": "YE OLDE FUDGE POT (RAWF)",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-11-01",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2023-11-03",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10832708",
+    "name": "BOM DIA CAFE & BAKERY",
+    "address": "389 DANFORTH AVE",
+    "type": "Bakery",
+    "latitude": 43.6774,
+    "longitude": -79.35171,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-05-27",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Operate food premise - equipment not constructed to permit maintenance in sanitary condition - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-18",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10836225",
+    "name": "TOUCH MASSAGE BAR & CAFE",
+    "address": "2555 YONGE ST, Unit-201",
+    "type": "Food Take Out",
+    "latitude": 43.71343,
+    "longitude": -79.3995,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure completion of food handling training by food handler or supervisor - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-04",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10843210",
+    "name": "COCO MARKET",
+    "address": "2549 YONGE ST",
+    "type": "Supermarket",
+    "latitude": 43.71331,
+    "longitude": -79.39947,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-29",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10843188",
+    "name": "JERK KING",
+    "address": "2300 YONGE ST, Unit-S120",
+    "type": "Food Court Vendor",
+    "latitude": 43.70716,
+    "longitude": -79.39908,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-11-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect food from contamination or adulteration - Sec. 26(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Use handwashing station other than for handwashing of employees - Sec. 7(4)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-28",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10843541",
+    "name": "JAMAICA HOUSE TORONTO",
+    "address": "2531 FINCH AVE W",
+    "type": "Restaurant",
+    "latitude": 43.74943,
+    "longitude": -79.55373,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED WITH FOOD HANDLING ROOM IN SANITARY CONDITION - SEC. 7(1)(E)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-02",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10848674",
+    "name": "THE FAIRWAY",
+    "address": "1660 BAYVIEW AVE",
+    "type": "Restaurant",
+    "latitude": 43.70732,
+    "longitude": -79.37603,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-17",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "FAIL TO PROVIDE THERMOMETER IN REFRIGERATION EQUIPMENT - SEC. 30(B)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          },
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10854741",
+    "name": "BLONDIES",
+    "address": "16 DUPONT ST",
+    "type": "Food Take Out",
+    "latitude": 43.67724,
+    "longitude": -79.3984,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-08-15",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10861318",
+    "name": "PREMIUM SHAWARMA & PIZZA",
+    "address": "242 PARLIAMENT ST",
+    "type": "Restaurant",
+    "latitude": 43.65743,
+    "longitude": -79.36518,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-10-08",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure equipment surface cleaned as necessary - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to provide handwashing stations with adequate supplies (hot and cold water) - Sec. 7(3)(c)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Food premise not maintained with walls in good repair in food-handling room - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to keep poisonous substance in compartment separate from food - Sec. 23(a)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Use handwashing station other than for handwashing of employees - Sec. 7(4)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Store potentially hazardous foods at internal temperature between 4 C and 60 C - Sec. 27(1)",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FOOD PREMISE NOT MAINTAINED TO KEEP FOOD-HANDLING ROOM FREE FROM EQUIPMENT NOT REGULARLY USED - SEC. 7(1)(F)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE FACILITY SURFACE CLEANED AS NECESSARY - SEC. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against harbouring of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to ensure presence of food handler or supervisor during all hours of operation - Sec. 32",
+            "severity": "NA - Not Applicable",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE FOOD HANDLER IN FOOD PREMISE PROTECTS AGAINST CONTAMINATION BY HAIR - SEC.  33(1)(D)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO MAINTAIN HANDWASHING STATIONS (LIQUID SOAP AND PAPER TOWELS) - SEC. 7(3)(C)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10864160",
+    "name": "ADAM BECK JR PS -SNP",
+    "address": "400 SCARBOROUGH RD",
+    "type": "Student Nutrition Site",
+    "latitude": 43.68316,
+    "longitude": -79.28849,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864148",
+    "name": "ALI'S SHAWARMA",
+    "address": "1172 WESTON RD",
+    "type": "Food Take Out",
+    "latitude": 43.68726,
+    "longitude": -79.49071,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864090",
+    "name": "ARANA ORCHARDS (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864062",
+    "name": "BARBURRITO",
+    "address": "1530 ALBION RD, Unit-96A",
+    "type": "Restaurant",
+    "latitude": 43.74177,
+    "longitude": -79.58461,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864121",
+    "name": "BIT N BRIDLE - RAWF 2025",
+    "address": "15 NOVA SCOTIA AVE",
+    "type": "Restaurant",
+    "latitude": 43.63435,
+    "longitude": -79.41815,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864080",
+    "name": "BRAND MOMENTUM (THERABREATH MOUTHWASH) (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10863943",
+    "name": "BURGERS N' FRIES FOREVER",
+    "address": "175 BLOOR ST E",
+    "type": "Restaurant",
+    "latitude": 43.67066,
+    "longitude": -79.38253,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864094",
+    "name": "CABAJAN KITCHEN (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864137",
+    "name": "CAFE WA SUSHI",
+    "address": "4800 DUFFERIN ST",
+    "type": "Restaurant",
+    "latitude": 43.77897,
+    "longitude": -79.46973,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "OPERATE FOOD PREMISE - MECHANICAL EQUIPMENT NOT MAINTAINED TO MAINTAIN RINSE WATER AT 82 C - SEC. 20(1)(A)(II)(A)",
+            "severity": "S - Significant",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10864088",
+    "name": "CARLA'S COOKIE BOX (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864125",
+    "name": "CHEF'S TABLE + DINNER SERIES - RAWF 2025",
+    "address": "100 PRINCES BLVD",
+    "type": "Commissary",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864103",
+    "name": "CHUCKY HABANERO (RAWF - 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864076",
+    "name": "COURAGE COOKIES (RAWF- 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864151",
+    "name": "CREATIVE TREATS (RAWF 2025)",
+    "address": "100 PRINCES BLVD, Bldg-1",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864147",
+    "name": "CROSS WIND FARMS",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864109",
+    "name": "DAVIS CONCESSIONS - CHEESE/PICKLES/POTATO - RAWF 2025",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864099",
+    "name": "DRINK ON APPLES (RAWF- 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864093",
+    "name": "FULL BEARD BREWING COMPANY (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10860750",
+    "name": "HAKKA DYNASTY",
+    "address": "2141 KIPLING AVE, Bldg-10A",
+    "type": "Restaurant",
+    "latitude": 43.71969,
+    "longitude": -79.56962,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864111",
+    "name": "HARVEST FOOD MARKET (OVG) - RAWF  2025",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864072",
+    "name": "HEAVENLY POP'T (RAWF- 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864119",
+    "name": "HITCHING RING - RAWF 2025",
+    "address": "45 MANITOBA DR",
+    "type": "Restaurant",
+    "latitude": 43.6358,
+    "longitude": -79.41509,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864085",
+    "name": "HORSE & BUGGY BRANDS INC (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864107",
+    "name": "JC CATTLE CO (RAWF - 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864145",
+    "name": "JEWELS BUBBLE TEA",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864102",
+    "name": "JEWELS UNDER THE KILT (RAWF - 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864073",
+    "name": "JMJ CANDIES (RAWF - 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864084",
+    "name": "JOHNSON FAMILY BAKERY (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864098",
+    "name": "JR'S HOT SAUCE (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864146",
+    "name": "KALAMATA LIMITED",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864116",
+    "name": "KALAMATA LTD.",
+    "address": "6464 YONGE ST",
+    "type": "Food Store (Convenience/Variety)",
+    "latitude": 43.79555,
+    "longitude": -79.42008,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864126",
+    "name": "KIZUNA SAUCES INC-RAWR 2025",
+    "address": "100 PRINCES BLVD, Bldg-A",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864118",
+    "name": "KLEVA SUMO SLICER-RAWR 2025",
+    "address": "100 PRINCES BLVD, Bldg-A",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864089",
+    "name": "KOKO'S TIFFIN",
+    "address": "2501 FINCH AVE W",
+    "type": "Food Caterer",
+    "latitude": 43.74952,
+    "longitude": -79.55314,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against harbouring of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Use handwashing station other than for handwashing of employees - Sec. 7(4)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "FAIL TO ENSURE EQUIPMENT SURFACE SANITIZED AS NECESSARY - SEC. 22",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10828696",
+    "name": "LEMON HEAVEN (RAWF)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864100",
+    "name": "LOST MEADOWS MEADERY (RAWF - 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864077",
+    "name": "MADE GOOD / GOOD TO GO (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864106",
+    "name": "MAMMA MIA PIZZERIA - RAWF 2025",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864097",
+    "name": "MANITOULIN GOURMET - HAWBERRY FARMS (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864143",
+    "name": "MARCHE MARIE",
+    "address": "100 PRINCES BLVD",
+    "type": "Food Take Out",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864069",
+    "name": "MINI MANE (RAWF 2025)",
+    "address": "100 PRINCES BLVD",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864091",
+    "name": "MOBILE ICEE",
+    "address": "100 PRINCES BLVD",
+    "type": "Bake Shop",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864122",
+    "name": "MOJO PEPPA SAUCE CO-RAWR 2025",
+    "address": "100 PRINCES BLVD, Bldg-A",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "10864120",
+    "name": "MR. KETTLECOM-RAWF 2025",
+    "address": "100 PRINCES BLVD, Bldg-A",
+    "type": "Fairs / Festivals / Special Occasions",
+    "latitude": 43.63501,
+    "longitude": -79.41119,
+    "city": "Toronto",
+    "inspections": [
+      {
+        "date": "2025-11-07",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  }
+]

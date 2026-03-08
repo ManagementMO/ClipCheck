@@ -56,3 +56,4 @@ playground.xcworkspace
 # Secrets
 *.env
 .env.*
+Submissions/clipcheck/Secrets.plist
