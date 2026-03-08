@@ -1,0 +1,33 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(cat*)",
+      "Bash(ls*)",
+      "Bash(find*)",
+      "Bash(grep*)",
+      "Bash(mkdir*)",
+      "Bash(cp*)",
+      "Bash(mv*)",
+      "Bash(echo*)",
+      "Bash(head*)",
+      "Bash(tail*)",
+      "Bash(wc*)",
+      "Bash(python3*)",
+      "Bash(swift*)",
+      "Bash(xcodebuild*)",
+      "Bash(open*)",
+      "Bash(curl*)",
+      "Bash(bash scripts/*)",
+      "Bash(git*)",
+      "Bash(cd*)",
+      "Bash(touch*)",
+      "Bash(rm*)",
+      "Bash(diff*)",
+      "Bash(sed*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,0 +1,23 @@
+# Xcode
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Secrets (API keys — never commit)
+Secrets.plist
+**/Secrets.plist
+
+# Misc
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM

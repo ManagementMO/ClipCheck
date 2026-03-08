@@ -2,7 +2,42 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:bugfender.com)"
+      "WebFetch(domain:bugfender.com)",
+      "WebFetch(domain:open.toronto.ca)",
+      "WebFetch(domain:data.waterloo.ca)",
+      "WebFetch(domain:ckan0.cf.opendata.inter.prod-toronto.ca)",
+      "WebFetch(domain:services1.arcgis.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:data.regionofwaterloo.ca)",
+      "WebFetch(domain:rowopendata-rmw.opendata.arcgis.com)",
+      "WebFetch(domain:opendata.regionofwaterloo.ca)",
+      "Bash(# The first endpoint exists - let's query it for GeoJSON\ncurl -sL \"https://services1.arcgis.com/qAo1OsXi67t7XgmS/arcgis/rest/services/Food_Inspection_Facilities/FeatureServer/0/query?where=1%3D1&outFields=*&f=json&resultRecordCount=2\" | python3 -c \"\nimport json, sys\ndata = json.load\\(sys.stdin\\)\nif 'error' in data:\n    print\\('Error:', data['error']\\)\nelse:\n    print\\('Fields:', [f['name'] for f in data.get\\('fields',[]\\)]\\)\n    print\\('Count:', len\\(data.get\\('features',[]\\)\\)\\)\n    if data.get\\('features'\\):\n        print\\('Sample:', json.dumps\\(data['features'][0]['attributes'], indent=2\\)[:500]\\)\n\" 2>&1)",
+      "WebFetch(domain:checkit.regionofwaterloo.ca)",
+      "Bash(cat*)",
+      "Bash(ls*)",
+      "Bash(find*)",
+      "Bash(grep*)",
+      "Bash(mkdir*)",
+      "Bash(cp*)",
+      "Bash(mv*)",
+      "Bash(echo*)",
+      "Bash(head*)",
+      "Bash(tail*)",
+      "Bash(wc*)",
+      "Bash(python3*)",
+      "Bash(swift*)",
+      "Bash(xcodebuild*)",
+      "Bash(open*)",
+      "Bash(curl*)",
+      "Bash(bash scripts/*)",
+      "Bash(git*)",
+      "Bash(cd*)",
+      "Bash(touch*)",
+      "Bash(rm*)",
+      "Bash(diff*)",
+      "Bash(sed*)",
+      "Bash(plutil:*)",
+      "WebFetch(domain:elevenlabs.io)"
     ]
   }
 }

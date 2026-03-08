@@ -1,0 +1,382 @@
+[
+  {
+    "id": "baba-chicken-grill",
+    "name": "Baba Chicken Grill",
+    "address": "372 King St W, Kitchener, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-11-15",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Refrigerate potentially hazardous foods at internal temperature of 4\u00b0C or below - Sec. 27",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Missing date labels on prepped food items stored in walk-in cooler - Sec. 30",
+            "severity": "M - Minor",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-20",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Minor grease accumulation on exhaust hood filters - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-01-10",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "the-keg-waterloo",
+    "name": "The Keg Steakhouse + Bar",
+    "address": "30 King St S, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-10-08",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-15",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Food premise not maintained with clean floors in food-handling room - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2024-10-22",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "vincenzos",
+    "name": "Vincenzo's",
+    "address": "150 Caroline St S, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-09-12",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-03-18",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-09-05",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Operate food premise - light fixture not shielded in food preparation area - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "campus-pizza",
+    "name": "Campus Pizza",
+    "address": "160 University Ave W, Waterloo, ON",
+    "type": "Food Take Out",
+    "inspections": [
+      {
+        "date": "2025-12-03",
+        "status": "Closed",
+        "infractions": [
+          {
+            "detail": "Evidence of pest activity in food storage area - Sec. 13(1)",
+            "severity": "C - Crucial",
+            "action": "Summons"
+          },
+          {
+            "detail": "Hot holding temperature below 60\u00b0C for potentially hazardous foods - Sec. 27",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Employee handling food without proper hygiene practices - Sec. 33",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Damaged door seal allowing pest entry on walk-in cooler - Sec. 9",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-06-15",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Sanitizer concentration below required level in dishwashing equipment - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Food handler certification not current for two staff members - Sec. 32",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-01-20",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Cross-contamination risk: raw and cooked food on shared preparation surfaces - Sec. 28",
+            "severity": "C - Crucial",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mortys-pub",
+    "name": "Morty's Pub",
+    "address": "272 King St N, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-10-25",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure proper sanitization of food contact surfaces - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-10",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Floor drain in dishwash area requires cleaning - Sec. 7(1)",
+            "severity": "M - Minor",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2024-11-15",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to protect against entry of pests - Sec. 13(1)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lancaster-smokehouse",
+    "name": "Lancaster Smokehouse",
+    "address": "574 Lancaster St W, Kitchener, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-11-20",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Grease accumulation on cooking equipment surfaces - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-30",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-12-05",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Internal temperature of smoked meat not maintained at 60\u00b0C or above - Sec. 27",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arabesque-cafe",
+    "name": "Arabesque Caf\u00e9",
+    "address": "25 King St S, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-10-05",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Handwashing station not accessible due to obstruction by storage items - Sec. 7(5)",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-12",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-18",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to provide adequate refrigeration for potentially hazardous foods - Sec. 27",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          },
+          {
+            "detail": "Cleaning supplies stored adjacent to food items on shared shelving - Sec. 7(1)",
+            "severity": "M - Minor",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pho-dau-bo",
+    "name": "Pho Dau Bo",
+    "address": "95 King St N, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-11-02",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Minor accumulation of food debris under cooking equipment - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-18",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Damaged ceiling tile above food preparation area - Sec. 7(1)(g)",
+            "severity": "M - Minor",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-11-25",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to maintain adequate records of food holding temperatures - Sec. 30",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "proof-kitchen",
+    "name": "Proof Kitchen + Lounge",
+    "address": "220 King St S, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-10-15",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2025-04-20",
+        "status": "Pass",
+        "infractions": []
+      },
+      {
+        "date": "2024-10-25",
+        "status": "Pass",
+        "infractions": []
+      }
+    ]
+  },
+  {
+    "id": "famoso-waterloo",
+    "name": "Famoso Neapolitan Pizzeria",
+    "address": "130 Erb St W, Waterloo, ON",
+    "type": "Restaurant",
+    "inspections": [
+      {
+        "date": "2025-09-28",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure food contact surfaces properly sanitized between uses - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2025-03-15",
+        "status": "Conditional Pass",
+        "infractions": [
+          {
+            "detail": "Fail to ensure equipment surfaces properly sanitized - Sec. 22",
+            "severity": "S - Significant",
+            "action": "Notice to Comply"
+          }
+        ]
+      },
+      {
+        "date": "2024-09-10",
+        "status": "Pass",
+        "infractions": [
+          {
+            "detail": "Minor grease accumulation on ventilation system components - Sec. 9",
+            "severity": "M - Minor",
+            "action": "Corrected During Inspection"
+          }
+        ]
+      }
+    ]
+  }
+]
