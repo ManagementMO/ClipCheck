@@ -19,6 +19,31 @@ private let fullDateFormatter: DateFormatter = {
     return f
 }()
 
+// MARK: - Design System
+
+private struct CardStyle: ViewModifier {
+    var cornerRadius: CGFloat = 16
+
+    func body(content: Content) -> some View {
+        content
+            .background {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .fill(.regularMaterial)
+                    .shadow(color: .black.opacity(0.05), radius: 10, y: 3)
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .strokeBorder(Color.primary.opacity(0.06), lineWidth: 0.5)
+            )
+    }
+}
+
+private extension View {
+    func cardStyle(cornerRadius: CGFloat = 16) -> some View {
+        modifier(CardStyle(cornerRadius: cornerRadius))
+    }
+}
+
 // MARK: - ClipCheck Experience
 
 struct ClipCheck: ClipExperience {
@@ -45,6 +70,7 @@ struct ClipCheck: ClipExperience {
     @State private var showingDietarySelector = false
     @State private var pendingRestaurantId: String?
     @State private var menuService = MenuAnalysisService()
+    @State private var weatherService = WeatherService()
 
     private var restaurantId: String {
         activeRestaurantId ?? context.pathParameters["restaurantId"] ?? ""
@@ -123,23 +149,26 @@ struct ClipCheck: ClipExperience {
 
     private var landingView: some View {
         ScrollView {
-            VStack(spacing: 24) {
-                Spacer().frame(height: 20)
+            VStack(spacing: 28) {
+                Spacer().frame(height: 32)
 
-                // Logo / Title
-                VStack(spacing: 8) {
-                    Image(systemName: "qrcode.viewfinder")
-                        .font(.system(size: 56))
-                        .foregroundStyle(.blue)
+                // Hero section
+                VStack(spacing: 12) {
+                    ZStack {
+                        Circle()
+                            .fill(.blue.opacity(0.08))
+                            .frame(width: 88, height: 88)
+                        Image(systemName: "qrcode.viewfinder")
+                            .font(.system(size: 40, weight: .light))
+                            .foregroundStyle(.blue)
+                    }
 
                     Text("ClipCheck")
-                        .font(.system(size: 28, weight: .bold))
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
 
-                    Text("Scan the code at any restaurant to check its safety score")
-                        .font(.system(size: 14))
+                    Text("Instant restaurant safety scores")
+                        .font(.system(size: 15, weight: .regular))
                         .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 40)
                 }
                 .onLongPressGesture {
                     showingQRGenerator = true
@@ -152,53 +181,54 @@ struct ClipCheck: ClipExperience {
                 } label: {
                     HStack(spacing: 10) {
                         Image(systemName: "camera.fill")
-                            .font(.system(size: 18, weight: .semibold))
+                            .font(.system(size: 17, weight: .medium))
                         Text("Scan QR Code")
                             .font(.system(size: 17, weight: .semibold))
                     }
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
-                    .background(
-                        LinearGradient(colors: [.blue, .blue.opacity(0.8)],
-                                       startPoint: .leading, endPoint: .trailing),
-                        in: RoundedRectangle(cornerRadius: 16)
-                    )
+                    .background(.blue.gradient, in: RoundedRectangle(cornerRadius: 14))
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 24)
                 #endif
 
                 // Manual entry
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Or enter URL manually")
-                        .font(.system(size: 13, weight: .medium))
-                        .foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("ENTER URL")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(.tertiary)
+                        .tracking(0.8)
                         .padding(.horizontal, 4)
 
-                    HStack(spacing: 8) {
+                    HStack(spacing: 10) {
                         TextField("example.com/restaurant/.../check", text: $manualURL)
                             .font(.system(size: 14, design: .monospaced))
                             .textInputAutocapitalization(.never)
                             .autocorrectionDisabled()
-                            .padding(12)
-                            .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 12))
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 12)
+                            .background(Color(.tertiarySystemFill), in: RoundedRectangle(cornerRadius: 12))
 
                         Button {
                             handleScannedURL(manualURL)
                         } label: {
                             Image(systemName: "arrow.right.circle.fill")
-                                .font(.system(size: 32))
+                                .font(.system(size: 30))
                                 .foregroundStyle(.blue)
                         }
                         .disabled(manualURL.isEmpty)
+                        .opacity(manualURL.isEmpty ? 0.4 : 1)
                     }
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 24)
 
                 // Demo restaurants
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Try a Demo")
-                        .font(.system(size: 15, weight: .semibold))
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("DEMO RESTAURANTS")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(.tertiary)
+                        .tracking(0.8)
                         .padding(.horizontal, 4)
 
                     ForEach(demoRestaurants) { restaurant in
@@ -210,15 +240,15 @@ struct ClipCheck: ClipExperience {
                         .buttonStyle(.plain)
                     }
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 24)
 
-                // Dev QR generator hint
-                Text("Long-press the title to generate printable QR codes")
+                // Dev hint
+                Text("Long-press title for QR generator")
                     .font(.system(size: 11))
                     .foregroundStyle(.quaternary)
-                    .padding(.top, 8)
+                    .padding(.top, 4)
 
-                Spacer().frame(height: 24)
+                Spacer().frame(height: 32)
             }
         }
         .scrollIndicators(.hidden)
@@ -237,28 +267,36 @@ struct ClipCheck: ClipExperience {
     }
 
     private func demoCard(_ restaurant: RestaurantData) -> some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 14) {
             MiniTrustGauge(score: restaurant.trustScore, level: restaurant.trustLevel)
                 .frame(width: 44, height: 44)
 
-            VStack(alignment: .leading, spacing: 3) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(restaurant.name)
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(.primary)
 
-                Text("\(restaurant.trustLevel.label) \u{2022} Score: \(restaurant.trustScore) \u{2022} Last: \(restaurant.inspections.first?.parsedStatus.label ?? "No inspections")")
-                    .font(.system(size: 12))
-                    .foregroundStyle(.secondary)
+                HStack(spacing: 6) {
+                    Text(restaurant.trustLevel.label)
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundStyle(restaurant.trustLevel.color)
+                    Text("\u{2022}")
+                        .font(.system(size: 8))
+                        .foregroundStyle(.quaternary)
+                    Text("\(restaurant.trustScore)/100")
+                        .font(.system(size: 11, weight: .medium, design: .rounded))
+                        .foregroundStyle(.secondary)
+                }
             }
 
             Spacer()
 
             Image(systemName: "chevron.right")
-                .font(.system(size: 12, weight: .semibold))
-                .foregroundStyle(.tertiary)
+                .font(.system(size: 11, weight: .semibold))
+                .foregroundStyle(.quaternary)
         }
-        .padding(14)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 16))
+        .padding(16)
+        .cardStyle()
     }
 
     // MARK: - Detail View
@@ -275,13 +313,16 @@ struct ClipCheck: ClipExperience {
                         Button {
                             goBackToLanding()
                         } label: {
-                            HStack(spacing: 4) {
+                            HStack(spacing: 5) {
                                 Image(systemName: "chevron.left")
-                                    .font(.system(size: 13, weight: .semibold))
-                                Text("Scan Another")
+                                    .font(.system(size: 12, weight: .semibold))
+                                Text("Back")
                                     .font(.system(size: 14, weight: .medium))
                             }
                             .foregroundStyle(.blue)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.blue.opacity(0.08), in: Capsule())
                         }
                         Spacer()
                     }
@@ -324,8 +365,21 @@ struct ClipCheck: ClipExperience {
                         .padding(.horizontal, 20)
                         .animation(.easeOut(duration: 0.4), value: gemini.isLoading)
 
-                    VoiceBriefingButton(gemini: gemini, tts: tts, menuService: menuService)
-                        .padding(.horizontal, 20)
+                    PersonalizedRecsCard(
+                        gemini: gemini,
+                        weather: weatherService,
+                        dietary: dietaryProfile
+                    )
+                    .padding(.horizontal, 20)
+                    .animation(.easeOut(duration: 0.4), value: gemini.isLoading)
+
+                    VoiceBriefingButton(
+                        gemini: gemini,
+                        tts: tts,
+                        menuService: menuService,
+                        weather: weatherService
+                    )
+                    .padding(.horizontal, 20)
 
                     MenuRecommendationCard(service: menuService, dietary: dietaryProfile)
                         .padding(.horizontal, 20)
@@ -354,23 +408,34 @@ struct ClipCheck: ClipExperience {
     // MARK: Background
 
     private var backgroundGradient: some View {
-        LinearGradient(
-            stops: [
-                .init(color: Color(.systemBackground).opacity(0.85), location: 0),
-                .init(color: Color(.systemBackground), location: 0.4),
-            ],
-            startPoint: .top,
-            endPoint: .bottom
-        )
-        .overlay(alignment: .top) {
-            if let restaurant, showingDetail {
-                restaurant.trustLevel.color
-                    .opacity(0.06)
+        Color(.systemBackground)
+            .overlay(alignment: .top) {
+                if let restaurant, showingDetail {
+                    EllipticalGradient(
+                        colors: [
+                            restaurant.trustLevel.color.opacity(0.08),
+                            restaurant.trustLevel.color.opacity(0.02),
+                            .clear
+                        ],
+                        center: .top,
+                        startRadiusFraction: 0,
+                        endRadiusFraction: 0.7
+                    )
+                    .frame(height: 400)
+                } else {
+                    EllipticalGradient(
+                        colors: [
+                            Color.blue.opacity(0.04),
+                            .clear
+                        ],
+                        center: .top,
+                        startRadiusFraction: 0,
+                        endRadiusFraction: 0.6
+                    )
                     .frame(height: 300)
-                    .blur(radius: 60)
+                }
             }
-        }
-        .ignoresSafeArea()
+            .ignoresSafeArea()
     }
 
     // MARK: URL Parsing
@@ -449,6 +514,13 @@ struct ClipCheck: ClipExperience {
 
     // MARK: Load / Switch
 
+    private var personalizationContext: PersonalizationContext {
+        PersonalizationContext(
+            weather: weatherService.weather,
+            dietary: dietaryProfile
+        )
+    }
+
     private func loadRestaurant() {
         if let first = restaurant?.inspections.first {
             selectedInspectionId = first.id
@@ -456,11 +528,16 @@ struct ClipCheck: ClipExperience {
         withAnimation(.easeOut(duration: 1.5).delay(0.3)) {
             gaugeAnimated = true
         }
+        // Fetch weather if not already loaded
+        weatherService.fetch()
+
         if let restaurant {
-            gemini.analyze(restaurant, dietary: dietaryProfile)
+            let ctx = personalizationContext
+            gemini.analyze(restaurant, dietary: dietaryProfile, personalization: ctx)
             // Stagger menu analysis to avoid Gemini rate limits
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                menuService.analyze(restaurant: restaurant, dietary: dietaryProfile)
+                let freshCtx = personalizationContext // may have weather by now
+                menuService.analyze(restaurant: restaurant, dietary: dietaryProfile, personalization: freshCtx)
             }
         }
     }
@@ -512,29 +589,33 @@ struct ClipCheck: ClipExperience {
     // MARK: Restaurant Header
 
     private func restaurantHeader(_ restaurant: RestaurantData) -> some View {
-        VStack(spacing: 6) {
-            Image(systemName: restaurant.trustLevel.icon)
-                .font(.system(size: 40))
-                .foregroundStyle(restaurant.trustLevel.color)
-
+        VStack(spacing: 8) {
             Text(restaurant.name)
-                .font(.system(size: 24, weight: .bold))
+                .font(.system(size: 26, weight: .bold))
                 .foregroundStyle(.primary)
 
             Text(restaurant.address)
                 .font(.system(size: 13))
                 .foregroundStyle(.secondary)
 
-            HStack(spacing: 12) {
+            HStack(spacing: 16) {
                 if !restaurant.type.isEmpty {
-                    Label(restaurant.type, systemImage: "fork.knife")
-                        .font(.system(size: 11, weight: .medium))
-                        .foregroundStyle(.tertiary)
+                    HStack(spacing: 4) {
+                        Image(systemName: "fork.knife")
+                            .font(.system(size: 10))
+                        Text(restaurant.type)
+                            .font(.system(size: 12, weight: .medium))
+                    }
+                    .foregroundStyle(.secondary)
                 }
                 if !restaurant.inspections.isEmpty {
-                    Label(restaurant.lastInspectedLabel, systemImage: "calendar")
-                        .font(.system(size: 11, weight: .medium))
-                        .foregroundStyle(.tertiary)
+                    HStack(spacing: 4) {
+                        Image(systemName: "calendar")
+                            .font(.system(size: 10))
+                        Text(restaurant.lastInspectedLabel)
+                            .font(.system(size: 12, weight: .medium))
+                    }
+                    .foregroundStyle(.secondary)
                 }
             }
             .padding(.top, 2)
@@ -548,14 +629,16 @@ struct ClipCheck: ClipExperience {
     @ViewBuilder
     private func violationsSection(_ inspection: Inspection) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 6) {
+            HStack(spacing: 8) {
                 Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 13))
                     .foregroundStyle(cautionColor)
                 Text("Violations")
-                    .font(.system(size: 15, weight: .semibold))
-                Text("— \(monthYearFormatter.string(from: inspection.parsedDate))")
-                    .font(.system(size: 13))
-                    .foregroundStyle(.secondary)
+                    .font(.system(size: 16, weight: .semibold))
+                Spacer()
+                Text(monthYearFormatter.string(from: inspection.parsedDate))
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundStyle(.tertiary)
             }
             .padding(.horizontal, 4)
 
@@ -604,65 +687,55 @@ private struct TrustScoreGauge: View {
         )
     }
 
-    private let trackStroke = StrokeStyle(lineWidth: 12, lineCap: .round)
-    private let arcStroke = StrokeStyle(lineWidth: 14, lineCap: .round)
+    private let trackStroke = StrokeStyle(lineWidth: 10, lineCap: .round)
+    private let arcStroke = StrokeStyle(lineWidth: 12, lineCap: .round)
 
     var body: some View {
         ZStack {
-            // 1. Faint spectrum track — shows the full scale
+            // Background track
             Circle()
                 .trim(from: 0, to: 0.75)
-                .stroke(spectrumGradient, style: trackStroke)
-                .rotationEffect(.degrees(135))
-                .opacity(0.12)
-
-            // 2. Subtle background track for depth
-            Circle()
-                .trim(from: 0, to: 0.75)
-                .stroke(Color(.tertiarySystemFill), style: trackStroke)
+                .stroke(Color(.quaternarySystemFill), style: trackStroke)
                 .rotationEffect(.degrees(135))
 
-            // 3. Glow behind active arc
+            // Soft glow behind arc
             Circle()
                 .trim(from: 0, to: progress * 0.75)
-                .stroke(level.color, style: StrokeStyle(lineWidth: 20, lineCap: .round))
+                .stroke(level.color.opacity(0.25), style: StrokeStyle(lineWidth: 18, lineCap: .round))
                 .rotationEffect(.degrees(135))
-                .blur(radius: 12)
-                .opacity(0.4)
+                .blur(radius: 10)
 
-            // 4. Active arc with spectrum gradient
+            // Active arc
             Circle()
                 .trim(from: 0, to: progress * 0.75)
                 .stroke(spectrumGradient, style: arcStroke)
                 .rotationEffect(.degrees(135))
-                .shadow(color: level.color.opacity(0.3), radius: 4, y: 2)
 
-            // 5. Endpoint dot
+            // Endpoint dot
             if animated && score > 0 {
                 endpointDot
             }
 
-            // 6. Center content
-            VStack(spacing: 6) {
+            // Center content
+            VStack(spacing: 4) {
                 HStack(alignment: .firstTextBaseline, spacing: 2) {
                     Text("\(animated ? score : 0)")
-                        .font(.system(size: 58, weight: .heavy, design: .rounded))
+                        .font(.system(size: 54, weight: .bold, design: .rounded))
                         .foregroundStyle(level.color)
                         .contentTransition(.numericText(value: Double(animated ? score : 0)))
 
-                    Text("/ 100")
-                        .font(.system(size: 16, weight: .medium, design: .rounded))
+                    Text("/100")
+                        .font(.system(size: 15, weight: .medium, design: .rounded))
                         .foregroundStyle(.quaternary)
                         .padding(.bottom, 4)
                 }
-                .scaleEffect(showPulse ? 1.08 : 1.0)
-                .shadow(color: level.color.opacity(showPulse ? 0.3 : 0), radius: 8)
+                .scaleEffect(showPulse ? 1.05 : 1.0)
 
                 Text(statusLabel)
-                    .font(.system(size: 13, weight: .bold))
-                    .tracking(2.5)
-                    .foregroundStyle(level.color.opacity(0.9))
-                    .scaleEffect(showPulse ? 1.04 : 1.0)
+                    .font(.system(size: 12, weight: .bold))
+                    .tracking(2)
+                    .foregroundStyle(level.color)
+                    .scaleEffect(showPulse ? 1.03 : 1.0)
             }
         }
         .padding(20)
@@ -722,9 +795,14 @@ private struct InspectionTimelineView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Inspection History")
-                .font(.system(size: 15, weight: .semibold))
-                .padding(.horizontal, 4)
+            HStack(spacing: 8) {
+                Image(systemName: "clock.arrow.circlepath")
+                    .font(.system(size: 13))
+                    .foregroundStyle(.blue)
+                Text("Inspection History")
+                    .font(.system(size: 16, weight: .semibold))
+            }
+            .padding(.horizontal, 4)
 
             ScrollViewReader { proxy in
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -744,7 +822,7 @@ private struct InspectionTimelineView: View {
                     .padding(.horizontal, 20)
                     .padding(.vertical, 16)
                 }
-                .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 16))
+                .cardStyle()
                 .onAppear {
                     if let id = mostRecentId {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -895,7 +973,7 @@ private struct InspectionTimelineView: View {
             }
         }
         .padding(12)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 14))
+        .cardStyle(cornerRadius: 14)
     }
 }
 
@@ -961,7 +1039,7 @@ private struct ViolationCard: View {
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 12))
+            .cardStyle(cornerRadius: 12)
         }
         .buttonStyle(.plain)
     }
@@ -993,14 +1071,17 @@ private struct AIAdvisorCard: View {
                 // Header
                 HStack(spacing: 8) {
                     Image(systemName: "sparkles")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: 14))
                         .foregroundStyle(.purple)
                     Text("AI Safety Advisor")
-                        .font(.system(size: 15, weight: .semibold))
+                        .font(.system(size: 16, weight: .semibold))
                     Spacer()
-                    Text("Powered by Gemini")
-                        .font(.system(size: 9, weight: .medium))
-                        .foregroundStyle(.tertiary)
+                    Text("Gemini")
+                        .font(.system(size: 10, weight: .medium, design: .rounded))
+                        .foregroundStyle(.purple.opacity(0.5))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3)
+                        .background(.purple.opacity(0.06), in: Capsule())
                 }
 
                 if gemini.isLoading {
@@ -1009,8 +1090,8 @@ private struct AIAdvisorCard: View {
                     advisorContent(result)
                 }
             }
-            .padding(14)
-            .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 16))
+            .padding(16)
+            .cardStyle()
             .transition(.opacity.combined(with: .offset(y: 8)))
         }
     }
@@ -1037,49 +1118,68 @@ private struct AIAdvisorCard: View {
         HStack(spacing: 6) {
             Circle()
                 .fill(riskColor)
-                .frame(width: 8, height: 8)
+                .frame(width: 7, height: 7)
             Text("\(result.riskLevel) RISK")
-                .font(.system(size: 10, weight: .bold))
-                .tracking(1)
+                .font(.system(size: 11, weight: .bold, design: .rounded))
+                .tracking(0.8)
                 .foregroundStyle(riskColor)
         }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 5)
+        .background(riskColor.opacity(0.08), in: Capsule())
 
         // Summary
         Text(result.summary)
             .font(.system(size: 13))
             .foregroundStyle(.secondary)
             .fixedSize(horizontal: false, vertical: true)
-            .lineSpacing(2)
+            .lineSpacing(3)
 
-        // Concerns (if any)
+        // Concerns
         if result.concerns != "None" && result.concerns != "N/A" {
-            VStack(alignment: .leading, spacing: 4) {
-                Label("Concerns", systemImage: "exclamationmark.triangle")
-                    .font(.system(size: 11, weight: .semibold))
-                    .foregroundStyle(cautionColor)
+            VStack(alignment: .leading, spacing: 5) {
+                HStack(spacing: 5) {
+                    Image(systemName: "exclamationmark.triangle")
+                        .font(.system(size: 11))
+                    Text("Concerns")
+                        .font(.system(size: 12, weight: .semibold))
+                }
+                .foregroundStyle(cautionColor)
+
                 Text(result.concerns)
-                    .font(.system(size: 12))
+                    .font(.system(size: 13))
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
-                    .lineSpacing(1.5)
+                    .lineSpacing(2)
             }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(cautionColor.opacity(0.04), in: RoundedRectangle(cornerRadius: 10))
         }
 
         // Recommendations
-        VStack(alignment: .leading, spacing: 4) {
-            Label("Tips", systemImage: "lightbulb.fill")
-                .font(.system(size: 11, weight: .semibold))
-                .foregroundStyle(.blue)
+        VStack(alignment: .leading, spacing: 5) {
+            HStack(spacing: 5) {
+                Image(systemName: "lightbulb.fill")
+                    .font(.system(size: 11))
+                Text("Tips")
+                    .font(.system(size: 12, weight: .semibold))
+            }
+            .foregroundStyle(.blue)
+
             Text(result.recommendations)
-                .font(.system(size: 12))
+                .font(.system(size: 13))
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
-                .lineSpacing(1.5)
+                .lineSpacing(2)
         }
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.blue.opacity(0.04), in: RoundedRectangle(cornerRadius: 10))
 
         // Error note
         if gemini.error != nil {
-            Text("AI analysis offline — showing assessment from official inspection records.")
+            Text("AI analysis offline — showing assessment from inspection records.")
                 .font(.system(size: 10))
                 .foregroundStyle(.tertiary)
                 .italic()
@@ -1100,11 +1200,12 @@ private struct NearbyAlternativesSection: View {
     var body: some View {
         if !alternatives.isEmpty {
             VStack(alignment: .leading, spacing: 12) {
-                HStack(spacing: 6) {
-                    Image(systemName: "map.fill")
+                HStack(spacing: 8) {
+                    Image(systemName: "location.fill")
+                        .font(.system(size: 13))
                         .foregroundStyle(.blue)
-                    Text("Nearby Safer Options")
-                        .font(.system(size: 15, weight: .semibold))
+                    Text("Safer Alternatives Nearby")
+                        .font(.system(size: 16, weight: .semibold))
                 }
                 .padding(.horizontal, 4)
 
@@ -1146,7 +1247,7 @@ private struct NearbyAlternativesSection: View {
                 .foregroundStyle(.tertiary)
         }
         .padding(12)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 14))
+        .cardStyle(cornerRadius: 14)
     }
 
     private func pseudoDistance(for id: String) -> String {
@@ -1188,6 +1289,7 @@ private struct VoiceBriefingButton: View {
     let gemini: GeminiService
     let tts: ElevenLabsService
     var menuService: MenuAnalysisService? = nil
+    var weather: WeatherService? = nil
 
     private var briefingText: String? {
         guard let result = gemini.result else { return nil }
@@ -1196,6 +1298,14 @@ private struct VoiceBriefingButton: View {
             parts.append(result.concerns)
         }
         parts.append(result.recommendations)
+
+        // Weather and time tips
+        if result.weatherTip != "N/A" {
+            parts.append(result.weatherTip)
+        }
+        if result.timeTip != "N/A" {
+            parts.append(result.timeTip)
+        }
 
         // Append menu recommendations if available
         if let menu = menuService?.result {
@@ -1206,6 +1316,11 @@ private struct VoiceBriefingButton: View {
             if let firstAvoid = menu.avoid.first {
                 parts.append("You may want to avoid \(firstAvoid.dishName) due to \(firstAvoid.reason.lowercased())")
             }
+        }
+
+        // Allergen warning
+        if result.allergenWarning != "No specific allergen concerns." && result.allergenWarning != "N/A" {
+            parts.append(result.allergenWarning)
         }
 
         return parts.joined(separator: " ")
@@ -1224,7 +1339,8 @@ private struct VoiceBriefingButton: View {
                 Group {
                     switch tts.state {
                     case .idle:
-                        Image(systemName: "speaker.wave.2.fill")
+                        Image(systemName: "waveform.circle.fill")
+                            .font(.system(size: 20))
                     case .loading:
                         ProgressView()
                             .controlSize(.small)
@@ -1233,22 +1349,22 @@ private struct VoiceBriefingButton: View {
                         WaveformIndicator()
                     }
                 }
-                .frame(width: 24, height: 20)
+                .frame(width: 24, height: 22)
 
-                Text(buttonLabel)
-                    .font(.system(size: 15, weight: .semibold))
+                VStack(alignment: .leading, spacing: 1) {
+                    Text(buttonLabel)
+                        .font(.system(size: 15, weight: .semibold))
+                    if tts.state == .idle {
+                        Text("AI-powered voice summary")
+                            .font(.system(size: 10, weight: .medium))
+                            .opacity(0.7)
+                    }
+                }
             }
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
-            .background(
-                LinearGradient(
-                    colors: buttonColors,
-                    startPoint: .leading,
-                    endPoint: .trailing
-                ),
-                in: RoundedRectangle(cornerRadius: 14)
-            )
+            .background(buttonGradient, in: RoundedRectangle(cornerRadius: 14))
             .opacity(isDisabled ? 0.5 : 1.0)
         }
         .disabled(isDisabled)
@@ -1263,10 +1379,12 @@ private struct VoiceBriefingButton: View {
         }
     }
 
-    private var buttonColors: [Color] {
+    private var buttonGradient: LinearGradient {
         switch tts.state {
-        case .playing: return [.purple, .pink]
-        default: return [.blue, .purple]
+        case .playing:
+            return LinearGradient(colors: [.purple, .pink.opacity(0.9)], startPoint: .leading, endPoint: .trailing)
+        default:
+            return LinearGradient(colors: [.blue, .blue.opacity(0.8)], startPoint: .leading, endPoint: .trailing)
         }
     }
 }
@@ -1310,43 +1428,48 @@ private struct MenuRecommendationCard: View {
     private var menuLoadingView: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 8) {
-                Text("🍽")
-                    .font(.system(size: 14))
+                Image(systemName: "fork.knife.circle.fill")
+                    .font(.system(size: 15))
+                    .foregroundStyle(safeColor)
                 Text("Recommended for You")
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.system(size: 16, weight: .semibold))
             }
 
             HStack(spacing: 10) {
                 ProgressView()
                     .controlSize(.small)
-                Text("Analyzing menu for your dietary needs...")
+                Text("Analyzing menu options...")
                     .font(.system(size: 13))
                     .foregroundStyle(.secondary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.vertical, 8)
         }
-        .padding(14)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 16))
+        .padding(16)
+        .cardStyle()
     }
 
     // MARK: Recommended
 
     private func recommendedSection(_ items: [MenuRecommendation]) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             // Header
             HStack(spacing: 8) {
-                Text("🍽")
-                    .font(.system(size: 14))
+                Image(systemName: "fork.knife.circle.fill")
+                    .font(.system(size: 15))
+                    .foregroundStyle(safeColor)
                 Text("Recommended for You")
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.system(size: 16, weight: .semibold))
                 Spacer()
 
                 if !dietary.isEmpty {
                     Text(dietary.summary)
-                        .font(.system(size: 9, weight: .medium))
+                        .font(.system(size: 10, weight: .medium))
                         .foregroundStyle(.blue)
                         .lineLimit(1)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3)
+                        .background(.blue.opacity(0.06), in: Capsule())
                 }
             }
 
@@ -1372,20 +1495,20 @@ private struct MenuRecommendationCard: View {
                 .animation(.easeOut(duration: 0.3).delay(Double(index) * 0.1), value: hasContent)
             }
         }
-        .padding(14)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 16))
+        .padding(16)
+        .cardStyle()
     }
 
     // MARK: Avoid
 
     private func avoidSection(_ items: [MenuAvoidance]) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 8) {
-                Text("⚠️")
-                    .font(.system(size: 14))
+                Image(systemName: "exclamationmark.shield.fill")
+                    .font(.system(size: 15))
+                    .foregroundStyle(cautionColor)
                 Text("Consider Avoiding")
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(.secondary)
+                    .font(.system(size: 16, weight: .semibold))
             }
 
             ForEach(Array(items.enumerated()), id: \.offset) { _, item in
@@ -1407,9 +1530,138 @@ private struct MenuRecommendationCard: View {
                 }
             }
         }
-        .padding(14)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 16))
-        .opacity(0.85)
+        .padding(16)
+        .background {
+            RoundedRectangle(cornerRadius: 16)
+                .fill(cautionColor.opacity(0.03))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(cautionColor.opacity(0.12), lineWidth: 0.5)
+                )
+        }
+    }
+}
+
+// MARK: - Personalized Recommendations Card
+
+private struct PersonalizedRecsCard: View {
+    let gemini: GeminiService
+    let weather: WeatherService
+    let dietary: DietaryProfile
+
+    private var hasContent: Bool {
+        gemini.result != nil
+    }
+
+    var body: some View {
+        if hasContent, let result = gemini.result {
+            let showWeather = result.weatherTip != "N/A"
+            let showTime = result.timeTip != "N/A"
+            let showAllergen = result.allergenWarning != "N/A"
+                && result.allergenWarning != "No specific allergen concerns."
+                && !dietary.allergens.isEmpty
+
+            if showWeather || showTime || showAllergen {
+                VStack(alignment: .leading, spacing: 14) {
+                    // Header
+                    HStack(spacing: 8) {
+                        Image(systemName: "person.text.rectangle.fill")
+                            .font(.system(size: 14))
+                            .foregroundStyle(.teal)
+                        Text("Personalized For You")
+                            .font(.system(size: 16, weight: .semibold))
+                    }
+
+                    // Weather tip
+                    if showWeather {
+                        HStack(alignment: .top, spacing: 10) {
+                            Image(systemName: weather.weather?.sfSymbol ?? "cloud.fill")
+                                .font(.system(size: 16))
+                                .foregroundStyle(.blue)
+                                .frame(width: 24)
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                HStack(spacing: 6) {
+                                    Text(weather.weather?.temperatureLabel ?? "")
+                                        .font(.system(size: 13, weight: .semibold))
+                                    Text(weather.weather?.condition ?? "")
+                                        .font(.system(size: 12))
+                                        .foregroundStyle(.secondary)
+                                }
+                                Text(result.weatherTip)
+                                    .font(.system(size: 12))
+                                    .foregroundStyle(.secondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .lineSpacing(1.5)
+                            }
+                        }
+                    }
+
+                    // Time tip
+                    if showTime {
+                        let period = MealPeriod.classify()
+                        HStack(alignment: .top, spacing: 10) {
+                            Image(systemName: period.sfSymbol)
+                                .font(.system(size: 16))
+                                .foregroundStyle(.orange)
+                                .frame(width: 24)
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                HStack(spacing: 6) {
+                                    Text(period.label)
+                                        .font(.system(size: 13, weight: .semibold))
+                                    Text(timeString())
+                                        .font(.system(size: 12))
+                                        .foregroundStyle(.secondary)
+                                }
+                                Text(result.timeTip)
+                                    .font(.system(size: 12))
+                                    .foregroundStyle(.secondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .lineSpacing(1.5)
+                            }
+                        }
+                    }
+
+                    // Allergen warning
+                    if showAllergen {
+                        HStack(alignment: .top, spacing: 10) {
+                            Image(systemName: "exclamationmark.triangle.fill")
+                                .font(.system(size: 16))
+                                .foregroundStyle(cautionColor)
+                                .frame(width: 24)
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                HStack(spacing: 4) {
+                                    ForEach(Array(dietary.allergens).sorted(by: { $0.rawValue < $1.rawValue }), id: \.self) { allergen in
+                                        Text(allergen.emoji)
+                                            .font(.system(size: 12))
+                                    }
+                                    ForEach(Array(dietary.preferences).sorted(by: { $0.rawValue < $1.rawValue }), id: \.self) { pref in
+                                        Text(pref.emoji)
+                                            .font(.system(size: 12))
+                                    }
+                                }
+                                Text(result.allergenWarning)
+                                    .font(.system(size: 12))
+                                    .foregroundStyle(.secondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .lineSpacing(1.5)
+                            }
+                        }
+                    }
+                }
+                .padding(16)
+                .cardStyle()
+                .transition(.opacity.combined(with: .offset(y: 8)))
+            }
+        }
+    }
+
+    private func timeString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        return formatter.string(from: Date())
     }
 }
 
@@ -1422,14 +1674,14 @@ private struct DietarySelectorSheet: View {
     var body: some View {
         VStack(spacing: 20) {
             // Header
-            VStack(spacing: 4) {
-                Text("Any dietary needs?")
-                    .font(.system(size: 20, weight: .bold))
+            VStack(spacing: 6) {
+                Text("Dietary Preferences")
+                    .font(.system(size: 22, weight: .bold))
                 Text("We'll personalize your safety report")
-                    .font(.system(size: 13))
+                    .font(.system(size: 14))
                     .foregroundStyle(.secondary)
             }
-            .padding(.top, 8)
+            .padding(.top, 12)
 
             // Allergens
             VStack(alignment: .leading, spacing: 8) {
@@ -1484,12 +1736,12 @@ private struct DietarySelectorSheet: View {
                 Button {
                     onContinue()
                 } label: {
-                    Text(profile.isEmpty ? "None — Skip" : "Continue →")
+                    Text(profile.isEmpty ? "Skip" : "Continue")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
-                        .background(.blue, in: RoundedRectangle(cornerRadius: 14))
+                        .background(.blue.gradient, in: RoundedRectangle(cornerRadius: 14))
                 }
 
                 if !profile.isEmpty {
@@ -1497,8 +1749,8 @@ private struct DietarySelectorSheet: View {
                         profile = DietaryProfile()
                     } label: {
                         Text("Clear All")
-                            .font(.system(size: 13))
-                            .foregroundStyle(.secondary)
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundStyle(.red.opacity(0.7))
                     }
                 }
             }
@@ -1597,16 +1849,16 @@ private struct DietaryBadge: View {
 
     var body: some View {
         HStack(spacing: 6) {
-            Image(systemName: "person.crop.circle.badge.checkmark")
-                .font(.system(size: 12))
-                .foregroundStyle(.blue)
+            Image(systemName: "leaf.fill")
+                .font(.system(size: 11))
+                .foregroundStyle(.green)
             Text(profile.summary)
                 .font(.system(size: 12, weight: .medium))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.primary.opacity(0.7))
         }
         .padding(.horizontal, 12)
-        .padding(.vertical, 6)
-        .background(Color.blue.opacity(0.08), in: Capsule())
+        .padding(.vertical, 7)
+        .background(Color(.tertiarySystemFill), in: Capsule())
     }
 }
 

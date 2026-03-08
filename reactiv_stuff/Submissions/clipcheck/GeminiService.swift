@@ -17,18 +17,23 @@ final class GeminiService {
         let concerns: String
         let recommendations: String
         let riskLevel: String
+        let weatherTip: String
+        let timeTip: String
+        let allergenWarning: String
         let rawResponse: String
     }
 
-    func analyze(_ restaurant: RestaurantData, dietary: DietaryProfile = DietaryProfile()) {
+    func analyze(_ restaurant: RestaurantData, dietary: DietaryProfile = DietaryProfile(), personalization: PersonalizationContext? = nil) {
         guard !isLoading else { return }
         isLoading = true
         error = nil
         result = nil
 
+        let ctx = personalization ?? PersonalizationContext(dietary: dietary)
+
         Task {
             do {
-                let advisor = try await fetchAdvisorResult(for: restaurant, dietary: dietary)
+                let advisor = try await fetchAdvisorResult(for: restaurant, context: ctx)
                 await MainActor.run {
                     self.result = advisor
                     self.isLoading = false
@@ -38,7 +43,7 @@ final class GeminiService {
                 print("[GeminiService] Localized: \(error.localizedDescription)")
                 await MainActor.run {
                     self.error = error.localizedDescription
-                    self.result = Self.fallback(for: restaurant, dietary: dietary)
+                    self.result = Self.fallback(for: restaurant, context: ctx)
                     self.isLoading = false
                 }
             }
@@ -47,8 +52,8 @@ final class GeminiService {
 
     // MARK: - Network
 
-    private func fetchAdvisorResult(for restaurant: RestaurantData, dietary: DietaryProfile) async throws -> AdvisorResult {
-        let prompt = Self.buildPrompt(for: restaurant, dietary: dietary)
+    private func fetchAdvisorResult(for restaurant: RestaurantData, context: PersonalizationContext) async throws -> AdvisorResult {
+        let prompt = Self.buildPrompt(for: restaurant, context: context)
 
         var urlComponents = URLComponents(string: Self.endpoint)!
         urlComponents.queryItems = [URLQueryItem(name: "key", value: Self.apiKey)]
@@ -85,7 +90,7 @@ final class GeminiService {
 
     // MARK: - Prompt
 
-    private static func buildPrompt(for restaurant: RestaurantData, dietary: DietaryProfile = DietaryProfile()) -> String {
+    private static func buildPrompt(for restaurant: RestaurantData, context: PersonalizationContext) -> String {
         var lines: [String] = []
         lines.append("You are a food safety advisor helping diners make informed decisions. A customer just scanned a QR code at \(restaurant.name) and wants to know if it's safe to eat here right now.")
         lines.append("")
@@ -96,9 +101,13 @@ final class GeminiService {
         lines.append("Cuisine: \(restaurant.type)")
         lines.append("Computed Trust Score: \(restaurant.trustScore)/100 (\(restaurant.trustLevel.label))")
 
-        if !dietary.isEmpty {
+        // Personalization context: weather, time, dietary
+        lines.append("")
+        lines.append(context.promptFragment)
+
+        if !context.dietary.isEmpty {
             lines.append("")
-            lines.append("IMPORTANT — Customer dietary profile: \(dietary.promptFragment)")
+            lines.append("IMPORTANT — Customer dietary profile: \(context.dietary.promptFragment)")
             lines.append("All recommendations MUST account for these restrictions. Flag any menu categories that may conflict with these needs.")
         }
 
@@ -126,6 +135,7 @@ final class GeminiService {
         }
 
         lines.append("Write a safety briefing for the customer. Be specific — reference actual violations, dates, and patterns from the data above. Do NOT be generic. The customer is standing in the restaurant right now and needs actionable advice.")
+        lines.append("Factor in the current weather and time of day when making your recommendations — e.g., cold weather favors hot cooked dishes (safer); late afternoon means food may have been sitting longer.")
         lines.append("")
         lines.append("Use EXACTLY this format with plain text only (no markdown, no asterisks, no bullet points):")
         lines.append("")
@@ -133,7 +143,13 @@ final class GeminiService {
         lines.append("")
         lines.append("CONCERNS: One to two sentences about the most worrying violation patterns. Reference specific violations from the data (e.g., \"cold food stored at unsafe temperatures\" not just \"food safety issues\"). If the record is clean, write \"None — this restaurant has a clean inspection record.\"")
         lines.append("")
-        lines.append("RECOMMENDATIONS: Two to three specific, practical tips. Tell the customer exactly what to order or avoid based on the violations found. For example: \"Skip the salad bar — raw food handling was flagged\" or \"Stick to grilled items since refrigeration was cited.\" If the record is clean, explain what makes this a confident choice.")
+        lines.append("RECOMMENDATIONS: Two to three specific, practical tips. Tell the customer exactly what to order or avoid based on the violations found AND the current weather/time context. For example: \"It's cold outside so you'll want hot food anyway — stick to grilled items since refrigeration was cited.\" If the record is clean, explain what makes this a confident choice.")
+        lines.append("")
+        lines.append("WEATHER_TIP: One sentence about how today's weather affects food safety choices at this specific restaurant. Reference the temperature and conditions.")
+        lines.append("")
+        lines.append("TIME_TIP: One sentence about how the current time of day affects food freshness at this restaurant.")
+        lines.append("")
+        lines.append("ALLERGEN_WARNING: If the diner specified allergens or dietary restrictions, give specific advice about cross-contamination risk based on the violations found. If no allergens specified, write \"No specific allergen concerns.\"")
         lines.append("")
         lines.append("RISK: Exactly one word: LOW, MODERATE, or HIGH")
 
@@ -180,7 +196,7 @@ final class GeminiService {
         )
 
         // Known field labels in order of appearance
-        let labels = ["SUMMARY:", "CONCERNS:", "RECOMMENDATIONS:", "RISK:"]
+        let labels = ["SUMMARY:", "CONCERNS:", "RECOMMENDATIONS:", "WEATHER_TIP:", "TIME_TIP:", "ALLERGEN_WARNING:", "RISK:"]
 
         /// Extracts the content for a given label by capturing everything from that label
         /// until the next known label (or end of text). Handles multi-line values,
@@ -217,12 +233,18 @@ final class GeminiService {
         let summary = extract("SUMMARY:", from: normalized)
         let concerns = extract("CONCERNS:", from: normalized)
         let recommendations = extract("RECOMMENDATIONS:", from: normalized)
+        let weatherTip = extract("WEATHER_TIP:", from: normalized)
+        let timeTip = extract("TIME_TIP:", from: normalized)
+        let allergenWarning = extract("ALLERGEN_WARNING:", from: normalized)
         var risk = extract("RISK:", from: normalized).uppercased()
 
         // Log each parsed field
         print("[GeminiService] Parsed SUMMARY: \"\(summary)\"")
         print("[GeminiService] Parsed CONCERNS: \"\(concerns)\"")
         print("[GeminiService] Parsed RECOMMENDATIONS: \"\(recommendations)\"")
+        print("[GeminiService] Parsed WEATHER_TIP: \"\(weatherTip)\"")
+        print("[GeminiService] Parsed TIME_TIP: \"\(timeTip)\"")
+        print("[GeminiService] Parsed ALLERGEN_WARNING: \"\(allergenWarning)\"")
         print("[GeminiService] Parsed RISK: \"\(risk)\"")
 
         // Warn about N/A fields
@@ -242,13 +264,17 @@ final class GeminiService {
             concerns: concerns,
             recommendations: recommendations,
             riskLevel: risk,
+            weatherTip: weatherTip,
+            timeTip: timeTip,
+            allergenWarning: allergenWarning,
             rawResponse: text
         )
     }
 
     // MARK: - Fallback
 
-    static func fallback(for restaurant: RestaurantData, dietary: DietaryProfile = DietaryProfile()) -> AdvisorResult {
+    static func fallback(for restaurant: RestaurantData, context: PersonalizationContext) -> AdvisorResult {
+        let dietary = context.dietary
         let name = restaurant.name
         let score = restaurant.trustScore
         let inspections = restaurant.inspections
@@ -366,11 +392,38 @@ final class GeminiService {
             recommendations += " Note: you indicated \(dietary.summary) — always confirm ingredients with your server."
         }
 
+        // Generate weather/time tips from context
+        var weatherTip = "N/A"
+        if let w = context.weather {
+            if w.temperature < 0 {
+                weatherTip = "It's \(Int(w.temperature))°C outside — hot, freshly cooked meals are both the warmest and safest choice."
+            } else if w.temperature > 25 {
+                weatherTip = "It's \(Int(w.temperature))°C outside — warm weather increases bacterial growth risk in improperly stored cold items."
+            } else {
+                weatherTip = "Current conditions (\(Int(w.temperature))°C, \(w.condition)) don't add significant food safety risk."
+            }
+        }
+
+        let timeTip = context.mealPeriod.safetyNote
+
+        var allergenWarning = "No specific allergen concerns."
+        if !dietary.allergens.isEmpty {
+            let allergenList = dietary.allergens.map(\.label).joined(separator: ", ")
+            if hasSanitationIssues || hasCrossContamination {
+                allergenWarning = "You flagged \(allergenList) allergies. This restaurant has sanitation/handling violations — extra caution recommended for cross-contamination. Ask staff about preparation procedures."
+            } else {
+                allergenWarning = "You flagged \(allergenList) allergies. No specific allergen-related violations on record, but always confirm with your server."
+            }
+        }
+
         return AdvisorResult(
             summary: summary,
             concerns: concerns,
             recommendations: recommendations,
             riskLevel: risk,
+            weatherTip: weatherTip,
+            timeTip: timeTip,
+            allergenWarning: allergenWarning,
             rawResponse: "[Offline analysis — based on inspection data]"
         )
     }

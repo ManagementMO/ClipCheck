@@ -24,6 +24,35 @@ struct QRGeneratorView: View {
                         .padding(.horizontal, 24)
                         .padding(.top, 8)
 
+                    // Personalized demo QR codes (with allergens/diet in URL)
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("PERSONALIZED DEMOS")
+                            .font(.system(size: 11, weight: .semibold))
+                            .foregroundStyle(.secondary)
+                            .tracking(1)
+                            .padding(.horizontal, 4)
+
+                        LazyVGrid(columns: [
+                            GridItem(.flexible(), spacing: 16),
+                            GridItem(.flexible(), spacing: 16),
+                        ], spacing: 16) {
+                            ForEach(personalizedDemos, id: \.url) { demo in
+                                personalizedQRCard(demo)
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+
+                    Divider().padding(.horizontal, 20)
+
+                    Text("ALL RESTAURANTS")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(.secondary)
+                        .tracking(1)
+                        .padding(.horizontal, 20)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
                     LazyVGrid(columns: [
                         GridItem(.flexible(), spacing: 16),
                         GridItem(.flexible(), spacing: 16),
@@ -60,6 +89,56 @@ struct QRGeneratorView: View {
         }
     }
 
+    // MARK: - Personalized Demo Data
+
+    private struct PersonalizedDemo {
+        let url: String
+        let label: String
+        let subtitle: String
+    }
+
+    private var personalizedDemos: [PersonalizedDemo] {
+        guard let first = restaurants.first else { return [] }
+        return [
+            PersonalizedDemo(
+                url: "https://example.com/restaurant/\(first.id)/check?allergens=nuts,dairy&diet=vegetarian",
+                label: "\(first.name)",
+                subtitle: "Nut + Dairy allergy, Vegetarian"
+            ),
+            PersonalizedDemo(
+                url: "https://example.com/restaurant/\(first.id)/check?allergens=gluten",
+                label: "\(first.name)",
+                subtitle: "Gluten allergy"
+            ),
+        ]
+    }
+
+    private func personalizedQRCard(_ demo: PersonalizedDemo) -> some View {
+        VStack(spacing: 8) {
+            if let image = generateQRImage(from: demo.url, size: 200) {
+                Image(uiImage: image)
+                    .interpolation(.none)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 140, height: 140)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+
+            Text(demo.label)
+                .font(.system(size: 12, weight: .semibold))
+                .lineLimit(1)
+
+            Text(demo.subtitle)
+                .font(.system(size: 10))
+                .foregroundStyle(.blue)
+                .lineLimit(2)
+                .multilineTextAlignment(.center)
+        }
+        .padding(12)
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
+        .shadow(color: .black.opacity(0.04), radius: 6, y: 2)
+    }
+
     // MARK: - QR Card
 
     private func qrCard(_ restaurant: RestaurantData) -> some View {
@@ -89,7 +168,8 @@ struct QRGeneratorView: View {
             }
         }
         .padding(12)
-        .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 14))
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
+        .shadow(color: .black.opacity(0.04), radius: 6, y: 2)
     }
 
     // MARK: - QR Generation

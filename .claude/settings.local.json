@@ -40,7 +40,12 @@
       "WebFetch(domain:elevenlabs.io)",
       "Bash(mkdir -p /tmp/clipcheck-backup)",
       "Bash(cp -r /Users/mo/Downloads/ClipKit/reactiv_stuff/Submissions/clipcheck/* /tmp/clipcheck-backup/)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(bash:*)",
+      "Bash(md5:*)",
+      "Bash(xargs ls:*)",
+      "Bash(read f:*)",
+      "Bash(xargs:*)"
     ]
   }
 }

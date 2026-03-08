@@ -31,15 +31,17 @@ final class MenuAnalysisService {
     private static var apiKey: String { Secrets.geminiAPIKey }
     private static let endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent"
 
-    func analyze(restaurant: RestaurantData, dietary: DietaryProfile) {
+    func analyze(restaurant: RestaurantData, dietary: DietaryProfile, personalization: PersonalizationContext? = nil) {
         guard !isLoading else { return }
         isLoading = true
         error = nil
         result = nil
 
+        let ctx = personalization ?? PersonalizationContext(dietary: dietary)
+
         Task {
             do {
-                let analysis = try await fetchAnalysis(restaurant: restaurant, dietary: dietary)
+                let analysis = try await fetchAnalysis(restaurant: restaurant, context: ctx)
                 await MainActor.run {
                     self.result = analysis
                     self.isLoading = false
@@ -57,8 +59,8 @@ final class MenuAnalysisService {
 
     // MARK: - Network
 
-    private func fetchAnalysis(restaurant: RestaurantData, dietary: DietaryProfile) async throws -> MenuAnalysisResult {
-        let prompt = Self.buildPrompt(restaurant: restaurant, dietary: dietary)
+    private func fetchAnalysis(restaurant: RestaurantData, context: PersonalizationContext) async throws -> MenuAnalysisResult {
+        let prompt = Self.buildPrompt(restaurant: restaurant, context: context)
 
         var urlComponents = URLComponents(string: Self.endpoint)!
         urlComponents.queryItems = [URLQueryItem(name: "key", value: Self.apiKey)]
@@ -90,12 +92,16 @@ final class MenuAnalysisService {
 
     // MARK: - Prompt
 
-    private static func buildPrompt(restaurant: RestaurantData, dietary: DietaryProfile) -> String {
-        let hour = Calendar.current.component(.hour, from: Date())
-        let mealTime = hour < 11 ? "breakfast" : hour < 16 ? "lunch" : "dinner"
+    private static func buildPrompt(restaurant: RestaurantData, context: PersonalizationContext) -> String {
+        let mealPeriod = context.mealPeriod
 
         var lines: [String] = []
-        lines.append("You are a menu advisor for a diner at \(restaurant.name), a \(restaurant.type) restaurant. It is \(mealTime) time.")
+        lines.append("You are a menu advisor for a diner at \(restaurant.name), a \(restaurant.type) restaurant. It is \(mealPeriod.label.lowercased()) (\(mealPeriod.safetyNote)).")
+
+        // Weather context
+        if let w = context.weather {
+            lines.append("Current weather: \(Int(w.temperature))°C, \(w.condition). Factor this into your recommendations — cold weather favors hot dishes, hot weather raises risk for improperly stored cold items.")
+        }
         lines.append("")
 
         // Violations context
@@ -110,16 +116,16 @@ final class MenuAnalysisService {
         }
 
         // Dietary context
-        if !dietary.isEmpty {
+        if !context.dietary.isEmpty {
             lines.append("")
-            lines.append("Customer dietary restrictions: \(dietary.promptFragment)")
+            lines.append("Customer dietary restrictions: \(context.dietary.promptFragment)")
             lines.append("All recommendations MUST be safe for these restrictions. All items to avoid must consider these restrictions.")
         }
 
         lines.append("")
-        lines.append("Based on the restaurant type, likely menu, inspection violations, and dietary needs, respond in EXACTLY this format. Plain text only, no markdown:")
+        lines.append("Based on the restaurant type, likely menu, inspection violations, weather, time of day, and dietary needs, respond in EXACTLY this format. Plain text only, no markdown:")
         lines.append("")
-        lines.append("RECOMMEND1: [dish name] | [one sentence reason referencing safety or dietary fit]")
+        lines.append("RECOMMEND1: [dish name] | [one sentence reason referencing safety, weather, or dietary fit]")
         lines.append("RECOMMEND2: [dish name] | [one sentence reason]")
         lines.append("RECOMMEND3: [dish name] | [one sentence reason]")
         lines.append("AVOID1: [dish name] | [one sentence reason referencing a specific violation or allergen risk]")
