@@ -37,7 +37,10 @@
       "Bash(diff*)",
       "Bash(sed*)",
       "Bash(plutil:*)",
-      "WebFetch(domain:elevenlabs.io)"
+      "WebFetch(domain:elevenlabs.io)",
+      "Bash(mkdir -p /tmp/clipcheck-backup)",
+      "Bash(cp -r /Users/mo/Downloads/ClipKit/reactiv_stuff/Submissions/clipcheck/* /tmp/clipcheck-backup/)",
+      "Read(//tmp/**)"
     ]
   }
 }
