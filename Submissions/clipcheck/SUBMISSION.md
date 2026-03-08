@@ -79,6 +79,6 @@ The primary impact is on the in-person channel, where trust directly affects whe
 
 ### Demo Video
 
-Link: ___
+Link: https://www.youtube.com/shorts/C4ItGb1_r0s
 
 ### Screenshot(s)
